@@ -1,22 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+
     <!-- tailwind css link -->
     <link rel="stylesheet" href="tailwind_config/tailwind_output.css">
+
+    <!-- flowbite tailwind css cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- rimix icon cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet"/>
+
     <title>Wacth E-Commerce</title>
 </head>
+
 <body>
+    <main>
+        <header>
+            <div class="sub_header hidden md:flex justify-between px-5 py-3 border-gray-400 border-solid border-b relative">
+                <div class="mobile_no flex gap-2 pe-5  border-gray-400 border-solid border-e">
+                    <i class="ri-phone-line text-lg flex gap-2 items-center"></i>
+                    <p>72757816XX</p>
+                </div>
+                <nav class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <ul class="flex gap-5">
+                        <li class="text-black"><a href="#">Home</a></li>
+                        <li class="text-black"><a href="#">About</a></li>
+                        <li class="text-black"><a href="#">Services</a></li>
+                        <li class="text-black"><a href="#">Blogs</a></li>
+                        <li class="text-black"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social_icon flex gap-5 ps-5 border-gray-400 border-solid border-s">
+                    <a href="#"><i class="ri-facebook-circle-line text-xl"></i></a>
+                    <a href="#"><i class="ri-instagram-line text-xl"></i></a>
+                    <a href="#"><i class="ri-twitter-line text-xl"></i></a>
+                    <a href="#"><i class="ri-whatsapp-line text-xl"></i></a>
+                </div>
+            </div>
+            <div class="main_header flex justify-between items-center px-5 py-3 lg:px-5 lg:py-5 bg-white md:relative">
+                <nav class="hidden md:block">
+                    <ul class="flex gap-5">
+                        <li class="text-black"><a href="#">Men</a></li>
+                        <li class="text-black"><a href="#">Women</a></li>
+                        <li class="text-black"><a href="#">Kids</a></li>
+                    </ul>
+                </nav>
+                <div class="logo md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
+                    <h2 class="text-black text-xl md:text-2xl">Tick Tock</h2>
+                </div>
+                <div class="user_section hidden md:block">
+                    <ul class="flex gap-5">
+                        <li class="text-black cursor-pointer"><i class="ri-search-eye-line"></i></li>
+                        <li class="text-black cursor-pointer">Log in</li>
+                        <li class="text-black cursor-pointer">Cart</li>
+                    </ul>
+                </div>
+                <div class="menu_icon md:hidden flex gap-5">
+                    <i class="ri-search-eye-line text-2xl"></i>
+                    <i class="open_menu ri-menu-fold-2-line text-2xl"></i>
+                </div>
+                <div class="menu_slider absolute md:hidden left-0 top-0 bg-white z-50 w-full h-screen">
+                    <div class="menu_logo flex justify-between p-5">
+                        <div class="logo">
+                            <h2 class="text-black text-3xl">Tick Tock</h2>
+                        </div>
+                        <i class="close_menu ri-menu-unfold-2-line text-2xl"></i>
+                    </div>
+                    <nav class="mob_nav">
+                        <ul class="flex flex-col gap-5 p-5">
+                            <li class="text-black text-xl"><a href="#">Home</a></li>
+                            <li class="text-black text-xl"><a href="#">About</a></li>
+                            <li class="text-black text-xl"><a href="#">Services</a></li>
+                            <li class="text-black text-xl"><a href="#">Blogs</a></li>
+                            <li class="text-black text-xl"><a href="#">Contact</a></li>
+                            <li class="text-black text-xl cursor-pointer">Cart</li>
+                            <li class="text-black text-xl cursor-pointer">Log in</li>
+                        </ul>
+                    </nav>
+                    <nav>
+                        <ul class="flex flex-col p-5 gap-5 border-gray-400 border-solid border-t">
+                            <li class="text-black text-xl"><a href="#">Men</a></li>
+                            <li class="text-black text-xl"><a href="#">Women</a></li>
+                            <li class="text-black text-xl"><a href="#">Kids</a></li>
+                        </ul>
+                    </nav>
+                    <div class="user_section">
+                        <ul class="flex flex-col gap-5  border-gray-400 border-solid border-t">
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="slider_container">
+            <div id="controls-carousel" class="relative w-full" data-carousel="static">
+                <!-- Carousel wrapper -->
+                <div class="relative h-screen overflow-hidden">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/img/website banner/banner-1.jpg"
+                            class="absolute block object-cover h-screen w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 2 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                        <img src="assets/img/website banner/banner-2.jpg"
+                            class="absolute block object-cover h-screen w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 3 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/img/website banner/banner-3.jpg"
+                            class="absolute block object-cover h-screen w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 4 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/img/website banner/banner-4.jpg"
+                            class="absolute block object-cover h-screen w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                    <!-- Item 5 -->
+                    <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                        <img src="assets/img/website banner/banner-5.jpg"
+                            class="absolute block object-cover h-screen w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                    </div>
+                </div>
+                <!-- Slider controls -->
+                <button type="button"
+                    class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-prev>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M5 1 1 5l4 4" />
+                        </svg>
+                        <span class="sr-only">Previous</span>
+                    </span>
+                </button>
+                <button type="button"
+                    class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                    data-carousel-next>
+                    <span
+                        class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                        <svg class="w-4 h-4 text-black dark:text-gray-800 rtl:rotate-180" aria-hidden="true"
+                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="m1 9 4-4-4-4" />
+                        </svg>
+                        <span class="sr-only">Next</span>
+                    </span>
+                </button>
+            </div>
 
+        </section>
+    </main>
+    
+    <!-- flowbite tailwind css cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
-    <h1 class="text-3xl font-bold underline text-right w-full">
-        Hello world!
-    </h1>
-
-
+    <!-- script link -->
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
