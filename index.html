@@ -176,13 +176,52 @@
         </section>
         <section class="product_section_container mt-24 px-10 flex gap-5 justify-between">
             <aside class="hidden w-1/4 md:block py-5">
-                <div class="aside_content w-full sticky top-5 bg-white rounded-lg"></div>
+                <div class="aside_content w-full sticky top-5 bg-white rounded-lg p-5">
+                    <h2 class="text-2xl border-b border-gray-400 py-1">Filter</h2>
+                    <div class="filter_container my-3 overflow-auto">
+                        <div class="brand_filter">
+                            <h3 class="flex items-center text-lg mt-3">Brands <span><i class="ri-arrow-drop-down-line text-2xl ms-2"></i></span></h3>
+                            <ul class="mt-2">
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer" id="sonata"><label for="sonata" class="cursor-pointer">Sonata</label></li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer" id="titan"><label for="titan" class="cursor-pointer">Titan</label></li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer" id="boat"><label for="boat" class="cursor-pointer">Boat</label></li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer" id="allen-solly"><label for="allen-solly" class="cursor-pointer">Allen-Solly</label></li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer" id="fastrack"><label for="fastrack" class="cursor-pointer">Fastrack</label></li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer" id="fire-bolt"><label for="fire-bolt" class="cursor-pointer">Fire-Bolt</label></li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer" id="peter-england"><label for="peter-england" class="cursor-pointer">Peter-England</label></li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer" id="fossil"><label for="fossil" class="cursor-pointer">Fossil</label></li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer" id="provogue"><label for="provogue" class="cursor-pointer">Provogue</label></li>
+                            </ul>
+                        </div>
+                        <div class="price_filter">
+                            <h3 class="flex items-center text-lg mt-3">Price <span><i class="ri-arrow-drop-down-line text-2xl ms-2"></i></span></h3>
+                            <div class="progress_bar_container px-5">
+                                <div class="price_progress_line mt-3 bg-blue-300 w-full h-1 rounded-lg">
+                                    <div class="progress_bar bg-blue-500 w-1/4 h-1 rounded-lg relative">
+                                        <div class="progress_pointer w-5 h-5 rounded-full bg-white absolute top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer"></div>
+                                    </div>
+                                </div>
+                                <div class="progress_amount_value w-full flex justify-between mt-2">
+                                    <div class="min_val">Rs. 0</div>
+                                    <div class="min_val">Rs. 10,000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3 class="flex items-center text-lg mt-3">Category <span><i class="ri-arrow-drop-down-line text-2xl ms-2"></i></span></h3>
+                            <ul class="mt-2">
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2">Men</li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2">Women</li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2">Kids</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </aside>
             <div class="md:my-5 w-3/4">
-                <div
-                    class="sort_option w-full sticky top-5 md:p-5 flex justify-between items-center bg-white rounded-lg">
+                <div class="sort_option w-full sticky top-5 md:px-5 md:py-3 flex justify-between items-center bg-white rounded-lg">
                     <h3>Sort By :</h3>
-                    <select name="sort" id="sort_by">
+                    <select name="sort" id="sort_by" class="cursor-pointer">
                         <option disabled selected>Choose</option>
                         <option value="men">Men</option>
                         <option value="women">Women</option>
@@ -1324,7 +1363,6 @@
                         </li>
                     </ul>
                 </nav>
-
             </div>
 
         </section>
