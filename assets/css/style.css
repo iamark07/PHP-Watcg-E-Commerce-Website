@@ -1,6 +1,6 @@
 /* aside section */
 
-.product_section_container aside{
+.product_section_container aside .aside_content{
     box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
 }
 
@@ -8,6 +8,16 @@
     height: calc(100vh - 40px);
 }
 
+.sort_option{
+    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+}
+
 .products_items_container .product{
     box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+}
+
+.products_items_container .product img{
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
 }
