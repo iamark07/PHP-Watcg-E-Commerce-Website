@@ -1,0 +1,13 @@
+/* aside section */
+
+.product_section_container aside{
+    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+}
+
+.aside_content{
+    height: calc(100vh - 40px);
+}
+
+.products_items_container .product{
+    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+}
