@@ -1,3 +1,54 @@
+/* google font link */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+*{
+  font-family: "PT Sans Narrow", sans-serif;
+}
+
+.menu_slider{
+  left: -100%;
+  transition: all .3s;
+}
+
+.open_menu_active{
+  left: 0% !important;
+}
+
+/* show all nav on mobile menu */
+
+.mob_all_nav_show{
+  transition: all .3s;
+  max-height: 0px;
+  overflow: hidden;
+}
+
+.all_nav_show_hide{
+  max-height: 500px !important;
+}
+
+.show_all_menu_icon{
+  transition: all .3s;
+}
+
+.show_all_menu_active{
+  transform: rotate(180deg);
+}
+
+.mob_nav_container{
+  overflow: auto;
+  /* background-color: red; */
+}
+
+.mob_nav_container_active{
+  height: calc(100vh - 172px);
+}
+
+
+.brand_logo .logo img{
+  object-fit: contain;
+}
+
+
 /* aside section */
 
 .product_section_container aside .aside_content{
