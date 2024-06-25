@@ -36,6 +36,7 @@
 
 .mob_nav_container{
   overflow: auto;
+  
   /* background-color: red; */
 }
 
@@ -43,6 +44,9 @@
   height: calc(100vh - 172px);
 }
 
+.brand_logo .logo{
+  /* background-color: red; */
+}
 
 .brand_logo .logo img{
   object-fit: contain;
