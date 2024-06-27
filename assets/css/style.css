@@ -65,6 +65,10 @@
     height: calc(100vh - 40px);
 }
 
+.mob_filter_sort_container{
+  box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+}
+
 .sort_option{
     box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
 }
@@ -75,8 +79,8 @@
 
 .products_items_container .product img{
     object-fit: contain;
-    width: 200px;
-    height: 200px;
+    /* width: 200px;
+    height: 200px; */
 }
 
 .filter_container{
