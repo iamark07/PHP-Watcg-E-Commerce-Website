@@ -44,12 +44,14 @@
   height: calc(100vh - 172px);
 }
 
-.brand_logo .logo{
-  /* background-color: red; */
+.brand_logo{
+  max-width: 200%;
+    
+    /* overflow-x: auto; */
 }
 
-.brand_logo .logo img{
-  object-fit: contain;
+.brand_logo::-webkit-scrollbar{
+  display: none;
 }
 
 
