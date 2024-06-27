@@ -36,12 +36,17 @@
 
 .mob_nav_container{
   overflow: auto;
+  box-shadow: rgb(205, 205, 205) 0px 0px 15px 5px inset;
   
   /* background-color: red; */
 }
 
+.mob_nav_container::-webkit-scrollbar{
+  display: none;
+}
+
 .mob_nav_container_active{
-  height: calc(100vh - 172px);
+  height: calc(100vh - 200px);
 }
 
 .brand_logo{
