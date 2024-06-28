@@ -89,7 +89,12 @@
 }
 
 .filter_container{
-    height: calc(100vh - 144.67px);
+    height: calc(100vh - 208.67px);
+    box-shadow: rgb(205, 205, 205) 0px 0px 15px 5px inset;
+}
+
+.filter_container::-webkit-scrollbar{
+  display: none;
 }
 
 .filter_container::-webkit-scrollbar {
