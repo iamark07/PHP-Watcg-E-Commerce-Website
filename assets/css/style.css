@@ -5,6 +5,27 @@
   font-family: "PT Sans Narrow", sans-serif;
 }
 
+/* search option */
+
+.search_box_container{
+  transition: all .5s;
+  /* top: 100.67px !important; */
+}
+
+.search_box_active{
+  top: 100.67px !important;
+  z-index: 30 !important;
+}
+
+.mob_search_box_container{
+  transition: all .5s;
+}
+
+.mob_search_box_active{
+  top: 56px !important;
+  z-index: 30 !important;
+}
+
 .menu_slider{
   left: -100%;
   transition: all .3s;

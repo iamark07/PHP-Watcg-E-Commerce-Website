@@ -1,3 +1,19 @@
+// search option
+
+let search_btn = document.getElementById("search_btn");
+
+search_btn.addEventListener("click", ()=>{
+    document.querySelector(".search_box_container").classList.toggle("search_box_active");
+});
+
+// mobile search option
+let mob_search_btn = document.getElementById("mob_search_btn");
+
+mob_search_btn.addEventListener("click", ()=>{
+    document.querySelector(".mob_search_box_container").classList.toggle("mob_search_box_active");
+});
+
+
 // menu slider function
 
 // open menu funtion
