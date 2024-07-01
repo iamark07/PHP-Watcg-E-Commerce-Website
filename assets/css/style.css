@@ -1,146 +1,175 @@
 /* google font link */
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
 
-*{
+* {
   font-family: "PT Sans Narrow", sans-serif;
 }
 
 /* search option */
 
-.search_box_container{
+.search_box_container {
   transition: all .5s;
   /* top: 100.67px !important; */
 }
 
-.search_box_active{
+.search_box_active {
   top: 100.67px !important;
   z-index: 30 !important;
 }
 
-.mob_search_box_container{
+.mob_search_box_container {
   transition: all .5s;
 }
 
-.mob_search_box_active{
+.mob_search_box_active {
   top: 56px !important;
   z-index: 30 !important;
 }
 
-.menu_slider{
+.menu_slider {
   left: -100%;
   transition: all .3s;
 }
 
-.open_menu_active{
+.open_menu_active {
   left: 0% !important;
 }
 
 /* show all nav on mobile menu */
 
-.mob_all_nav_show{
+.mob_all_nav_show {
   transition: all .3s;
   max-height: 0px;
   overflow: hidden;
 }
 
-.all_nav_show_hide{
+.all_nav_show_hide {
   max-height: 500px !important;
 }
 
-.show_all_menu_icon{
+.show_all_menu_icon {
   transition: all .3s;
 }
 
-.show_all_menu_active{
+.show_all_menu_active {
   transform: rotate(180deg);
 }
 
-.mob_nav_container{
+.mob_nav_container {
   overflow: auto;
   box-shadow: rgb(205, 205, 205) 0px 0px 15px 5px inset;
-  
+
   /* background-color: red; */
 }
 
-.mob_nav_container::-webkit-scrollbar{
+.mob_nav_container::-webkit-scrollbar {
   display: none;
 }
 
-.mob_nav_container_active{
+.mob_nav_container_active {
   height: calc(100vh - 200px);
 }
 
-.brand_logo{
+.brand_logo {
   max-width: 200%;
-    
-    /* overflow-x: auto; */
+
+  /* overflow-x: auto; */
 }
 
-.brand_logo::-webkit-scrollbar{
+.brand_logo::-webkit-scrollbar {
   display: none;
 }
 
 
 /* aside section */
 
-.product_section_container aside .aside_content{
-    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
-}
-
-.aside_content{
-    height: calc(100vh - 40px);
-}
-
-.mob_filter_sort_container{
+.product_section_container aside .aside_content {
   box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
 }
 
-.sort_option{
-    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+.aside_content {
+  height: calc(100vh - 40px);
 }
 
-.products_items_container .product{
-    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+.mob_filter_sort_container {
+  box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
 }
 
-.products_items_container .product img{
-    object-fit: contain;
-    /* width: 200px;
+.sort_option {
+  box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+}
+
+.products_items_container .product {
+  box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+}
+
+.products_items_container .product img {
+  object-fit: contain;
+  /* width: 200px;
     height: 200px; */
 }
 
-.filter_container{
-    height: calc(100vh - 208.67px);
-    box-shadow: rgb(205, 205, 205) 0px 0px 15px 5px inset;
+.filter_container {
+  height: calc(100vh - 208.67px);
+  box-shadow: rgb(205, 205, 205) 0px 0px 15px 5px inset;
 }
 
-.filter_container::-webkit-scrollbar{
+.filter_container::-webkit-scrollbar {
   display: none;
 }
 
 .filter_container::-webkit-scrollbar {
-    width: 8px;
-  }
-  
-  /* Track */
-  .filter_container::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(208, 208, 208); 
-    border-radius: 10px;
-  }
-   
-  /* Handle */
-  .filter_container::-webkit-scrollbar-thumb {
-    background: rgb(224, 224, 224); 
-    border-radius: 10px;
-    cursor: pointer;
-  }
-  
-  /* Handle on hover */
-  .filter_container::-webkit-scrollbar-thumb:hover {
-    background: #a8a8a8; 
-  }
+  width: 8px;
+}
 
-.progress_pointer{
-    left: 100%;
-    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+/* Track */
+.filter_container::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(208, 208, 208);
+  border-radius: 10px;
+}
+
+/* Handle */
+.filter_container::-webkit-scrollbar-thumb {
+  background: rgb(224, 224, 224);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Handle on hover */
+.filter_container::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* mobile filter option */
+
+.fixed_position {
+  position: fixed !important;
+  z-index: 999;
+  /* border-bottom: 1px solid rgb(156, 163, 175) !important; */
+}
+
+.show_mob_filter {
+  display: block !important;
+  border-top: 1px solid rgb(156, 163, 175) !important;
+}
+
+.show_mob_sort {
+  display: flex !important;
+  border-top: 1px solid rgb(156, 163, 175) !important;
+}
+
+.filter_content_values{
+  transition: all .5s linear;
+  max-height: 500px;
+}
+
+.hide_filter_values{
+  max-height: 0px !important;
+  overflow: hidden !important;
+  pointer-events: none;
+}
+
+.progress_pointer {
+  left: 100%;
+  box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
 }
