@@ -17,6 +17,9 @@
     <!-- rimix icon cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
 
+    <!-- FONT AWESOME CDN LINK-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
     <title>Wacth E-Commerce</title>
 </head>
 
@@ -39,10 +42,14 @@
                     </ul>
                 </nav>
                 <div class="social_icon flex gap-5 ps-5 border-gray-400 border-solid border-s">
-                    <a href="#"><i class="ri-facebook-circle-line text-xl"></i></a>
-                    <a href="#"><i class="ri-instagram-line text-xl"></i></a>
-                    <a href="#"><i class="ri-twitter-line text-xl"></i></a>
-                    <a href="#"><i class="ri-whatsapp-line text-xl"></i></a>
+                    <a href="#"><i
+                            class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
+                    <a href="#"><i
+                            class="ri-instagram-line text-xl transition-all duration-300 hover:text-pink-600"></i></a>
+                    <a href="#"><i
+                            class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
+                    <a href="#"><i
+                            class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
                 </div>
             </div>
             <div class="main_header flex justify-between items-center px-5 py-3 lg:px-5 lg:py-5 md:relative">
@@ -67,7 +74,7 @@
                 </div>
                 <div class="menu_icon md:hidden flex gap-5">
                     <i class="ri-search-eye-line text-2xl" id="mob_search_btn"></i>
-                    
+
                     <i class="open_menu ri-menu-fold-2-line text-2xl" id="open_menu_btn"></i>
                 </div>
                 <div class="menu_slider fixed md:hidden top-0 bg-white z-50 w-full h-screen">
@@ -123,10 +130,14 @@
                             <p class="text-xl flex items-center">72757816XX</p>
                         </div>
                         <div class="social_icon flex gap-5">
-                            <a href="#"><i class="ri-facebook-circle-line text-2xl"></i></a>
-                            <a href="#"><i class="ri-instagram-line text-2xl"></i></a>
-                            <a href="#"><i class="ri-twitter-line text-2xl"></i></a>
-                            <a href="#"><i class="ri-whatsapp-line text-2xl"></i></a>
+                            <a href="#"><i
+                                    class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
+                            <a href="#"><i
+                                    class="ri-instagram-line text-xl transition-all duration-300 hover:text-pink-600"></i></a>
+                            <a href="#"><i
+                                    class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
+                            <a href="#"><i
+                                    class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
                         </div>
                     </div>
                 </div>
@@ -135,14 +146,17 @@
         <div class="search_box_container hidden md:block bg-white p-5 border-gray-400 rounded-bl-lg border-solid border-t absolute top-0 right-0 -z-10">
             <div class="search_box flex">
                 <input type="search" class="search_input px-5 py-2 w-52 rounded-l-lg" placeholder="Search Your Item">
-                <input type="submit" class="search_submit_input px-2 py-2 text-white w-16 rounded-r-lg !bg-slate-600" value="Search">
+                <input type="submit" class="search_submit_input px-2 py-2 text-white w-16 rounded-r-lg !bg-blue-600"
+                    value="Search">
             </div>
             <!-- <i class="ri-close-circle-line absolute right-12 top-7 text-4xl"></i> -->
         </div>
-        <div class="mob_search_box_container flex justify-center md:hidden bg-white p-5 border-gray-400 rounded-b-lg border-solid border-t absolute -top-10 right-0 -z-10 w-full">
+        <div
+            class="mob_search_box_container flex justify-center md:hidden bg-white p-5 border-gray-400 rounded-b-lg border-solid border-t absolute -top-10 right-0 -z-10 w-full">
             <div class="search_box flex">
                 <input type="search" class="search_input px-4 py-3 w-56 rounded-l-lg" placeholder="Search Your Item">
-                <input type="submit" class="search_submit_input px-4 py-3 text-white w-20 rounded-r-lg !bg-slate-600" value="Search">
+                <input type="submit" class="search_submit_input px-4 py-3 text-white w-20 rounded-r-lg !bg-slate-600"
+                    value="Search">
             </div>
         </div>
         <section class="slider_container">
@@ -257,9 +271,9 @@
                     <h2 class="text-2xl border-b border-gray-400 py-1">Filter</h2>
                     <div class="filter_container my-3 p-3 rounded-lg overflow-auto">
                         <div class="brand_filter">
-                            <h3 class="flex items-center text-lg mt-3">Brands <span class ="filter_value_hide_btn"><i
+                            <h3 class="flex items-center text-lg mt-3">Brands <span class="filter_value_hide_btn"><i
                                         class="ri-arrow-drop-down-line text-2xl ms-2 cursor-pointer"></i></span></h3>
-                            <ul class="mt-2 filter_content_values">
+                            <ul class="mt-2 filter_content_values rounded-lg">
                                 <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer"
                                         id="sonata"><label for="sonata" class="cursor-pointer">Sonata</label></li>
                                 <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 cursor-pointer"
@@ -284,9 +298,9 @@
                             </ul>
                         </div>
                         <div class="price_filter">
-                            <h3 class="flex items-center text-lg mt-3">Price <span  class ="filter_value_hide_btn"><i
+                            <h3 class="flex items-center text-lg mt-3">Price <span class="filter_value_hide_btn"><i
                                         class="ri-arrow-drop-down-line text-2xl ms-2 cursor-pointer"></i></span></h3>
-                            <div class="progress_bar_container filter_content_values px-5">
+                            <div class="progress_bar_container filter_content_values rounded-lg px-5">
                                 <div class="price_progress_line mt-3 bg-blue-300 w-full h-1 rounded-lg">
                                     <div class="progress_bar bg-blue-500 w-1/4 h-1 rounded-lg relative">
                                         <div
@@ -301,9 +315,9 @@
                             </div>
                         </div>
                         <div class="category">
-                            <h3 class="flex items-center text-lg mt-3">Category <span  class ="filter_value_hide_btn"><i
+                            <h3 class="flex items-center text-lg mt-3">Category <span class="filter_value_hide_btn"><i
                                         class="ri-arrow-drop-down-line text-2xl ms-2 cursor-pointer"></i></span></h3>
-                            <ul class="mt-2 filter_content_values">
+                            <ul class="mt-2 filter_content_values rounded-lg">
                                 <li class="ms-5 flex items-center"><input type="checkbox" class="me-2">Men</li>
                                 <li class="ms-5 flex items-center"><input type="checkbox" class="me-2">Women</li>
                                 <li class="ms-5 flex items-center"><input type="checkbox" class="me-2">Kids</li>
@@ -314,9 +328,9 @@
             </aside>
             <div class="md:my-5 w-full lg:w-3/4">
                 <div
-                    class="sort_option hidden lg:flex w-full sticky top-5 md:px-5 md:py-3 justify-between items-center bg-white rounded-lg">
+                    class="sort_option hidden lg:flex w-full sticky z-50 top-5 md:px-5 md:py-3 justify-between items-center bg-white rounded-lg">
                     <h3>Sort By :</h3>
-                    <select name="sort" id="sort_by" class="cursor-pointer">
+                    <select name="sort" id="sort_by" class="cursor-pointer rounded-lg bg-blue-600 text-white">
                         <option disabled selected>Choose</option>
                         <option value="men">Men</option>
                         <option value="women">Women</option>
@@ -325,70 +339,58 @@
                 </div>
                 <div class="mob_filter_sort_container flex lg:hidden sticky top-0 left-0 w-full">
                     <div class="mob_filter_container w-1/2 bg-white p-5  border-gray-400 border-solid border-e ">
-                        <h2 class="text-center" class="filter_btn option_btn" onclick="filter_option()"><i class="ri-filter-line me-2 text-lg"></i>Filter</h2>
-                        <div class="hidden lg:hidden mob_filter fixed top-16 left-0 w-screen bg-white z-50 h-screen p-5">
+                        <h2 class="text-center" class="filter_btn option_btn" onclick="filter_option()"><i
+                                class="ri-filter-line me-2 text-lg"></i>Filter</h2>
+                        <div
+                            class="hidden lg:hidden mob_filter fixed top-16 left-0 w-screen bg-white z-50 h-screen p-5">
                             <h2 class="text-3xl border-b border-gray-400 py-1">Filter</h2>
                             <div class="filter_container my-3 p-5 rounded-lg overflow-auto">
                                 <div class="brand_filter">
-                                    <h3 class="flex items-center text-xl mt-3">Brands <span class="filter_value_hide_btn"><i
+                                    <h3 class="flex items-center text-xl mt-3">Brands <span
+                                            class="filter_value_hide_btn"><i
                                                 class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
                                     <ul class="mt-2 filter_content_values">
                                         <li class="ms-5 flex items-center">
-                                            <input type="checkbox"
-                                                class="me-2 cursor-pointer" id="sonata">
-                                            <label for="sonata"
-                                                class="cursor-pointer text-lg">Sonata</label>
+                                            <input type="checkbox" class="me-2 cursor-pointer" id="sonata">
+                                            <label for="sonata" class="cursor-pointer text-lg">Sonata</label>
                                         </li>
                                         <li class="ms-5 flex items-center">
-                                            <input type="checkbox"
-                                                class="me-2 cursor-pointer" id="titan">
-                                            <label for="titan"
-                                                class="cursor-pointer text-lg">Titan</label>
+                                            <input type="checkbox" class="me-2 cursor-pointer" id="titan">
+                                            <label for="titan" class="cursor-pointer text-lg">Titan</label>
                                         </li>
                                         <li class="ms-5 flex items-center">
-                                            <input type="checkbox"
-                                                class="me-2 cursor-pointer" id="boat">
-                                            <label for="boat"
-                                                class="cursor-pointer text-lg">Boat</label>
+                                            <input type="checkbox" class="me-2 cursor-pointer" id="boat">
+                                            <label for="boat" class="cursor-pointer text-lg">Boat</label>
                                         </li>
                                         <li class="ms-5 flex items-center">
-                                            <input type="checkbox"
-                                                class="me-2 cursor-pointer" id="allen-solly">
-                                            <label for="allen-solly"
-                                                class="cursor-pointer text-lg">Allen-Solly</label>
+                                            <input type="checkbox" class="me-2 cursor-pointer" id="allen-solly">
+                                            <label for="allen-solly" class="cursor-pointer text-lg">Allen-Solly</label>
                                         </li>
                                         <li class="ms-5 flex items-center">
-                                            <input type="checkbox"
-                                                class="me-2 cursor-pointer" id="fastrack">
-                                            <label for="fastrack"
-                                                class="cursor-pointer text-lg">Fastrack</label>
+                                            <input type="checkbox" class="me-2 cursor-pointer" id="fastrack">
+                                            <label for="fastrack" class="cursor-pointer text-lg">Fastrack</label>
                                         </li>
                                         <li class="ms-5 flex items-center">
-                                            <input type="checkbox"
-                                                class="me-2 cursor-pointer" id="fire-bolt">
+                                            <input type="checkbox" class="me-2 cursor-pointer" id="fire-bolt">
                                             <label for="fire-bolt" class="cursor-pointer text-lg">Fire-Bolt</label>
                                         </li>
                                         <li class="ms-5 flex items-center">
-                                            <input type="checkbox"
-                                                class="me-2 cursor-pointer" id="peter-england">
+                                            <input type="checkbox" class="me-2 cursor-pointer" id="peter-england">
                                             <label for="peter-england" class="cursor-pointer">Peter-England</label>
                                         </li>
                                         <li class="ms-5 flex items-center">
-                                            <input type="checkbox"
-                                                class="me-2 cursor-pointer" id="fossil">
-                                            <label for="fossil"
-                                                class="cursor-pointer text-lg">Fossil</label>
+                                            <input type="checkbox" class="me-2 cursor-pointer" id="fossil">
+                                            <label for="fossil" class="cursor-pointer text-lg">Fossil</label>
                                         </li>
                                         <li class="ms-5 flex items-center">
-                                            <input type="checkbox"
-                                                class="me-2 cursor-pointer" id="provogue">
-                                            <label for="provogue"
-                                                class="cursor-pointer text-lg">Provogue</label>
+                                            <input type="checkbox" class="me-2 cursor-pointer" id="provogue">
+                                            <label for="provogue" class="cursor-pointer text-lg">Provogue</label>
                                         </li>
                                     </ul>
                                 </div>
                                 <div class="price_filter">
-                                    <h3 class="flex items-center text-xl mt-3">Price <span class="filter_value_hide_btn"><i
+                                    <h3 class="flex items-center text-xl mt-3">Price <span
+                                            class="filter_value_hide_btn"><i
                                                 class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
                                     <div class="progress_bar_container px-5 filter_content_values">
                                         <div class="price_progress_line mt-3 bg-blue-300 w-full h-1 rounded-lg">
@@ -405,28 +407,36 @@
                                     </div>
                                 </div>
                                 <div class="category">
-                                    <h3 class="flex items-center text-xl mt-3">Category <span class="filter_value_hide_btn"><i
+                                    <h3 class="flex items-center text-xl mt-3">Category <span
+                                            class="filter_value_hide_btn"><i
                                                 class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
                                     <ul class="mt-2 filter_content_values">
-                                        <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Men</li>
-                                        <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Women
+                                        <li class="ms-5 flex items-center"><input type="checkbox"
+                                                class="me-2 text-lg">Men</li>
+                                        <li class="ms-5 flex items-center"><input type="checkbox"
+                                                class="me-2 text-lg">Women
                                         </li>
-                                        <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Kids</li>
+                                        <li class="ms-5 flex items-center"><input type="checkbox"
+                                                class="me-2 text-lg">Kids</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="filter_btn flex w-full absolute bottom-16 left-0">
-                                <button class="text-lg bg-red-500 text-white w-1/2 p-3  border-gray-400 border-solid border">Cancel</button>
-                                <button class="text-lg bg-red-500 text-white w-1/2 p-3  border-gray-400 border-solid border">Submit</button>
+                                <button
+                                    class="text-lg bg-red-500 text-white w-1/2 p-3  border-gray-400 border-solid border">Cancel</button>
+                                <button
+                                    class="text-lg bg-red-500 text-white w-1/2 p-3  border-gray-400 border-solid border">Submit</button>
                             </div>
                         </div>
                     </div>
                     <div class="mob_sort_container w-1/2 bg-white p-5  ">
-                        <h2 class="text-center" class="sort_btn option_btn" onclick="sort_option()"><i class="ri-sort-asc me-2 text-lg"></i>Sort By</h2>
-                        <div class="mob_sort hidden lg:hidden fixed top-16 left-1/2 -translate-x-1/2 bg-white z-50 p-5 w-1/2 justify-center">
+                        <h2 class="text-center" class="sort_btn option_btn" onclick="sort_option()"><i
+                                class="ri-sort-asc me-2 text-lg"></i>Sort By</h2>
+                        <div
+                            class="mob_sort hidden lg:hidden fixed top-16 left-1/2 -translate-x-1/2 bg-white z-50 p-5 w-1/2 justify-center">
                             <select name="sort" id="sort_by" class="cursor-pointer">
                                 <option disabled selected>Choose</option>
-                                <option value="men">Men</option>
+                                <option valu    e="men">Men</option>
                                 <option value="women">Women</option>
                                 <option value="kids">Kids</option>
                             </select>
@@ -443,10 +453,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Allen Solly Analog premium Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -482,9 +490,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,199</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -497,10 +505,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Boat Lunar Seek Smart Watch</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -536,9 +542,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,699</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -551,10 +557,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Boat Lunar Space Plus Smart Watch </h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -590,9 +594,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,899</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
 
@@ -606,10 +610,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Boat Wave Neo Plus Smart Watch</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -645,9 +647,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -660,10 +662,9 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Fastrack Bold Fonts Analog Watch For Men
+                                    </h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -699,9 +700,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,799</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -714,10 +715,9 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Fastrack Bold Fonts Analog Watch For Men
+                                    </h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -753,9 +753,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,299</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -768,10 +768,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Allen Solley Analog Watch For Women</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -807,9 +805,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 999</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -822,10 +820,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Fire Boltt Hunter Smart Watch</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -861,9 +857,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -876,10 +872,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Fire Boltt Hurricane Smart Watch</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -915,9 +909,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,099</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -931,10 +925,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Fire Boltt Ninja Calling Pro Smart Pro</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -970,9 +962,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,599</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -985,10 +977,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Fossil Grant Spor Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1024,9 +1014,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,299</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1039,10 +1029,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Fastrack Tees Analog Watch For Women<h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1078,9 +1066,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 899</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1093,10 +1081,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Fossil Rhett Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1132,9 +1118,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,999</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1147,10 +1133,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Peter England Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1186,9 +1170,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,399</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1201,10 +1185,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Peter England Premium Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1240,9 +1222,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,499</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1255,10 +1237,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Provogue Dial Quartz Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1294,9 +1274,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1309,10 +1289,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Provogue Semi Water Resistant Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1348,9 +1326,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 799</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1363,10 +1341,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Sonata Premium Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1402,9 +1378,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 3,499</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1417,10 +1393,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Sonata Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1456,9 +1430,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,799</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1471,10 +1445,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Sonata Glossy Look Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1510,9 +1482,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 3,599</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1525,10 +1497,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Tiatn Karishma Refresher Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1564,9 +1534,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,599</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1579,10 +1549,8 @@
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
                             <a href="#">
                                 <h5
-                                    class="!text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                                    Apple
-                                    Watch
-                                    Series 7 GPS, Aluminium Case, Starlight Sport</h5>
+                                    class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
+                                    Titan Neo Gents V Analog Watch For Men</h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -1618,9 +1586,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white">$599</span>
+                                    class="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,3   99</span>
                                 <a href="#"
-                                    class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Add
+                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1746,10 +1714,14 @@
                     </span>
                     <div class="flex mt-4 sm:justify-center sm:mt-0">
                         <div class="social_icon flex gap-5 sm:ps-5 sm:border-gray-400 sm:border-solid sm:border-s">
-                            <a href="#"><i class="ri-facebook-circle-line text-xl"></i></a>
-                            <a href="#"><i class="ri-instagram-line text-xl"></i></a>
-                            <a href="#"><i class="ri-twitter-line text-xl"></i></a>
-                            <a href="#"><i class="ri-whatsapp-line text-xl"></i></a>
+                            <a href="#"><i
+                                    class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
+                            <a href="#"><i
+                                    class="ri-instagram-line text-xl transition-all duration-300 hover:text-pink-600"></i></a>
+                            <a href="#"><i
+                                    class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
+                            <a href="#"><i
+                                    class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
                         </div>
                     </div>
                 </div>
