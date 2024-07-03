@@ -160,12 +160,140 @@
                     value="Search">
             </div>
         </div>
-        <section class="product_section !p-5 md:!p-10 w-full bg-white">
-            <div class="product_detail_container flex flex-col md:flex-row md:justify-center gap-10 w-full">
+        <div class="mob_filter_sort_container hidden sticky top-0 left-0 w-full">
+            <div class="mob_filter_container w-1/2 bg-white p-5 border-gray-400 border-solid border-e ">
+                <h2 class="text-center" class="filter_btn option_btn" onclick="filter_option()"><i
+                        class="ri-filter-line me-2 text-lg"></i>Filter</h2>
+                <div
+                    class="hidden lg:hidden mob_filter fixed top-16 left-0 w-screen bg-white z-50 h-screen p-5">
+                    <h2 class="text-3xl border-b border-gray-400 py-1">Filter</h2>
+                    <div class="filter_container mob_filter_content my-3 p-5 rounded-lg overflow-auto">
+                        <div class="brand_filter">
+                            <h3 class="flex items-center text-xl mt-3">Brands <span
+                                    class="filter_value_hide_btn"><i
+                                        class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
+                            <ul class="mt-2 filter_content_values">
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_sonata">
+                                    <label for="mob_sonata" class="cursor-pointer text-lg">Sonata</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_titan">
+                                    <label for="mob_titan" class="cursor-pointer text-lg">Titan</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_boat">
+                                    <label for="mob_boat" class="cursor-pointer text-lg">Boat</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_allen-solly">
+                                    <label for="mob_allen-solly" class="cursor-pointer text-lg">Allen-Solly</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_fastrack">
+                                    <label for="mob_fastrack" class="cursor-pointer text-lg">Fastrack</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_fire-bolt">
+                                    <label for="mob_fire-bolt" class="cursor-pointer text-lg">Fire-Bolt</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_peter-england">
+                                    <label for="mob_peter-england" class="cursor-pointer">Peter-England</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_fossil">
+                                    <label for="mob_fossil" class="cursor-pointer text-lg">Fossil</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_provogue">
+                                    <label for="mob_provogue" class="cursor-pointer text-lg">Provogue</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price_filter">
+                            <h3 class="flex items-center text-xl mt-3">Price <span
+                                    class="filter_value_hide_btn"><i
+                                        class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
+                            <div class="progress_bar_container px-5 filter_content_values">
+                                <div class="price_progress_line mt-3 bg-blue-300 w-full h-1 rounded-lg">
+                                    <div class="progress_bar bg-blue-500 w-1/4 h-1 rounded-lg relative">
+                                        <div
+                                            class="progress_pointer w-5 h-5 rounded-full bg-white absolute top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress_amount_value w-full flex justify-between mt-2">
+                                    <div class="min_val text-lg">Rs. 0</div>
+                                    <div class="min_val text-lg">Rs. 10,000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3 class="flex items-center text-xl mt-3">Category <span
+                                    class="filter_value_hide_btn"><i
+                                        class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
+                            <ul class="mt-2 filter_content_values">
+                                <li class="ms-5 flex items-center"><input type="checkbox"
+                                        class="me-2 text-lg">Men</li>
+                                <li class="ms-5 flex items-center"><input type="checkbox"
+                                        class="me-2 text-lg">Women
+                                </li>
+                                <li class="ms-5 flex items-center"><input type="checkbox"
+                                        class="me-2 text-lg">Kids</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_btn flex w-full absolute bottom-16 left-0">
+                        <button
+                            class="text-lg bg-red-500 text-white w-1/2 p-3  border-gray-400 border-solid border"  onclick="filter_option()">Cancel</button>
+                        <button
+                            class="text-lg bg-red-500 text-white w-1/2 p-3  border-gray-400 border-solid border">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mob_sort_container w-1/2 bg-white p-5  ">
+                <h2 class="text-center" class="sort_btn option_btn" onclick="sort_option()"><i
+                        class="ri-sort-asc me-2 text-lg"></i>Sort By</h2>
+                <div
+                    class="mob_sort hidden lg:hidden fixed top-16 left-1/2 -translate-x-1/2 bg-white z-50 p-5 w-1/2 justify-center">
+                    <select name="sort" id="sort_by" class="cursor-pointer">
+                        <option disabled selected>Choose</option>
+                        <option valu    e="men">Men</option>
+                        <option value="women">Women</option>
+                        <option value="kids">Kids</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <section class="product_section !p-5 lg!p-10 w-full bg-white">
+            <div class="product_detail_container flex flex-col lg:flex-row lg:justify-center gap-5 lg:gap-10 w-full">
                 <div class="product_img_wrapper w-full">
                     <div
                         class="product_img sticky top-10 p-10 flex justify-center items-center border-gray-300 border-solid border">
-                        <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg" class="w-full md:w-80 md:h-80 object-contain"
+                        <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg" class="w-52 h-52 lg:w-80 lg:h-80 object-contain"
+                            alt="">
+                    </div>
+                </div>
+                <div class="pro_all_side_img flex w-full lg:hidden gap-5">
+                    <div class="pro_side_img">
+                        <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg"
+                            class="w-20 h-20 md:w-24 md:h-24 object-contain rounded-sm cursor-pointer border-gray-200 hover:border-blue-500 border-solid border-2"
+                            alt="">
+                    </div>
+                    <div class="pro_side_img">
+                        <img src="assets/img/men/allen-solly/Analog Watch/watch-2.jpg"
+                            class="w-20 h-20 md:w-24 md:h-24 object-contain rounded-sm cursor-pointer border-gray-200 hover:border-blue-500 border-solid border-2"
+                            alt="">
+                    </div>
+                    <div class="pro_side_img">
+                        <img src="assets/img/men/allen-solly/Analog Watch/watch-3.jpg"
+                            class="w-20 h-20 md:w-24 md:h-24 object-contain rounded-sm cursor-pointer border-gray-200 hover:border-blue-500 border-solid border-2"
+                            alt="">
+                    </div>
+                    <div class="pro_side_img">
+                        <img src="assets/img/men/allen-solly/Analog Watch/watch-4.jpg"
+                            class="w-20 h-20 md:w-24 md:h-24 object-contain rounded-sm cursor-pointer border-gray-200 hover:border-blue-500 border-solid border-2"
                             alt="">
                     </div>
                 </div>
@@ -186,18 +314,18 @@
                             class="ri-star-s-fill ms-1"></i></div>
                     <div class="pro_amount mt-5">
                         <span
-                            class="pro_amount text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white"><i
+                            class="pro_amount text-4xl font-bold text-gray-900 dark:text-white"><i
                                 class="fa-solid fa-indian-rupee-sign text-3xl"></i> 1,199
                         </span>
-                        <span class="befor_pro_amount pro_amount line-through ms-5 text-xl text-gray-500"><i
+                        <span class="befor_pro_amount pro_amount line-through ms-3 lg:ms-5 text-2xl lg:text-xl text-gray-500"><i
                                 class="fa-solid fa-indian-rupee-sign text-lg"></i> 1,699</span>
                     </div>
-                    <p class="pro_desc text-lg mt-3">
+                    <p class="pro_desc text-lg text-justify mt-3">
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur ducimus iste accusantium
                         sunt cum quam incidunt? Doloremque perferendis beatae consequuntur fugit cum maiores incidunt
                         iste. Consequuntur sapiente inventore tenetur vero.
                     </p>
-                    <div class="pro_all_side_img w-full flex gap-5 mt-10">
+                    <div class="pro_all_side_img hidden w-full lg:flex gap-5 mt-10">
                         <div class="pro_side_img">
                             <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg"
                                 class="w-24 h-24 object-contain rounded-sm cursor-pointer border-gray-200 hover:border-blue-500 border-solid border-2"
@@ -219,17 +347,17 @@
                                 alt="">
                         </div>
                     </div>
-                    <div class="buy_add_cart_btn flex gap-5 mt-5">
+                    <div class="buy_add_cart_btn fixed lg:static bottom-0 left-0 w-full grid grid-cols-2 lg:flex lg:gap-5 mt-5">
                         <a href="#">
-                            <button class="bg-blue-400 border border-solid border-blue-500 text-white w-32 md:w-52 p-4">Buy</button>
+                            <button class="bg-blue-500 border border-solid border-blue-500 text-white w-full lg:!w-52 p-4">Buy</button>
                         </a>
                         <a href="#">
-                            <button class="bg-transparent border border-solid border-blue-500 text-blue-500 w-32 md:w-52 p-4">Add To Cart</button>
+                            <button class="bg-white border border-solid border-blue-500 text-blue-500 w-full lg:!w-52 p-4">Add To Cart</button>
                         </a>
                     </div>
                     <div class="specification mt-14">
                         <h2 class="text-3xl font-bold">Specification</h2>
-                        <ul class="mt-5 w-96 flex flex-col gap-3">
+                        <ul class="mt-5 w-full lg:w-96 flex flex-col gap-3">
                             <li class="grid gap-5 grid-cols-2 text-md">
                                 <span class="font-bold">Water Resistant</span>
                                 <span>Yes</span>
@@ -258,7 +386,7 @@
                     </div>
                     <div class="ask_ques_container">
                         <div class="ask_ques flex mt-14 w-full">
-                            <input type="text" placeholder="Ask Your Questions" class="w-52 md:w-96 p-3 rounded-s-lg">
+                            <input type="text" placeholder="Ask Your Questions" class="w-full lg:w-96 p-3 rounded-s-lg">
                             <input type="submit" class="py-3 px-5 bg-blue-500 rounded-r-lg text-white">
                         </div>
                         <h2 class="text-3xl font-bold mt-14">Qusestion And Answers</h2>

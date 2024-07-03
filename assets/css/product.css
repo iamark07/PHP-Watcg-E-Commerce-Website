@@ -81,6 +81,7 @@
 .fixed_position {
     position: fixed !important;
     z-index: 999;
+    display: flex !important;
     /* border-bottom: 1px solid rgb(156, 163, 175) !important; */
 }
 
