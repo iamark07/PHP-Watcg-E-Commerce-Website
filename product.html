@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="tailwind_config/tailwind_output.css">
+
+    <!-- flowbite tailwind css cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- rimix icon cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- FONT AWESOME CDN LINK-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+    <title>Products</title>
+</head>
+
+<body>
+    <main class="bg-gray-50 relative">
+        <header class="bg-white relative z-40  border-gray-400 border-solid border-b">
+            <div
+                class="sub_header hidden md:flex justify-between px-5 py-3 border-gray-400 border-solid border-b relative">
+                <div class="mobile_no flex gap-2 pe-5  border-gray-400 border-solid border-e">
+                    <i class="ri-phone-line text-lg flex gap-2 items-center"></i>
+                    <p>72757816XX</p>
+                </div>
+                <nav class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <ul class="flex gap-5">
+                        <li class="text-black"><a href="#">Home</a></li>
+                        <li class="text-black"><a href="#">About</a></li>
+                        <li class="text-black"><a href="#">Services</a></li>
+                        <li class="text-black"><a href="#">Blogs</a></li>
+                        <li class="text-black"><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social_icon flex gap-5 ps-5 border-gray-400 border-solid border-s">
+                    <a href="#"><i
+                            class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
+                    <a href="#"><i
+                            class="ri-instagram-line text-xl transition-all duration-300 hover:text-pink-600"></i></a>
+                    <a href="#"><i
+                            class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
+                    <a href="#"><i
+                            class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
+                </div>
+            </div>
+            <div class="main_header flex justify-between items-center px-5 py-3 lg:px-5 lg:py-5 md:relative">
+                <nav class="hidden md:block">
+                    <ul class="flex gap-5">
+                        <li class="text-black"><a href="#">Men</a></li>
+                        <li class="text-black"><a href="#">Women</a></li>
+                        <li class="text-black"><a href="#">Kids</a></li>
+                    </ul>
+                </nav>
+                <div class="logo md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
+                    <h2 class="text-black text-xl md:text-2xl">Tick Tock</h2>
+                </div>
+                <div class="user_section hidden md:block">
+                    <ul class="flex gap-5">
+                        <li class="text-black cursor-pointer flex gap-5">
+                            <i class="ri-search-eye-line" id="search_btn"></i>
+                        </li>
+                        <li class="text-black cursor-pointer">Log in</li>
+                        <li class="text-black cursor-pointer">Cart</li>
+                    </ul>
+                </div>
+                <div class="menu_icon md:hidden flex gap-5">
+                    <i class="ri-search-eye-line text-2xl" id="mob_search_btn"></i>
+
+                    <i class="open_menu ri-menu-fold-2-line text-2xl" id="open_menu_btn"></i>
+                </div>
+                <div class="menu_slider fixed md:hidden top-0 bg-white z-50 w-full h-screen">
+                    <div class="menu_logo flex justify-between p-5">
+                        <div class="logo">
+                            <h2 class="text-black text-3xl">Tick Tock</h2>
+                        </div>
+                        <i class="close_menu ri-menu-unfold-2-line text-2xl" id="close_menu_btn"></i>
+                    </div>
+                    <div class="mob_nav_container rounded-lg mx-3">
+                        <nav class="mob_nav">
+                            <ul class="flex flex-col gap-5 p-5">
+                                <li class="text-black text-xl"><a href="#"><i class="ri-home-8-line pe-3"></i>Home</a>
+                                </li>
+                                <li class="text-black text-xl"><a href="#"><i class="ri-store-3-line pe-3"></i>About</a>
+                                </li>
+                                <li class="text-black text-xl"><a href="#"><i
+                                            class="ri-contacts-book-3-line pe-3"></i>Contact</a></li>
+                                <li class="text-black text-xl cursor-pointer"><i
+                                        class="ri-login-circle-line pe-3"></i>Log in</li>
+                            </ul>
+                        </nav>
+                        <nav class="mob_all_nav_show">
+                            <ul class="flex flex-col pb-5 px-5 gap-5">
+                                <li class="text-black text-xl"><a href="#"></i><i
+                                            class="ri-user-6-line pe-3"></i>Men</a></li>
+                                <li class="text-black text-xl"><a href="#"><i class="ri-user-2-line pe-3"></i>Women</a>
+                                </li>
+                                <li class="text-black text-xl"><a href="#"><i class="ri-user-5-line pe-3"></i>Kids</a>
+                                </li>
+                                <li class="text-black text-xl"><a href="#"><i
+                                            class="ri-shake-hands-line pe-3"></i>Services</a></li>
+                                <li class="text-black text-xl"><a href="#"><i class="ri-news-line pe-3"></i>Blogs</a>
+                                </li>
+                                <li class="text-black text-xl cursor-pointer"><i
+                                        class="ri-shopping-cart-2-line pe-3"></i>Cart
+                                </li>
+                                <li class="text-black text-xl cursor-pointer" onclick="filter_option()">
+                                    <i class="ri-filter-line me-2 text-lg"></i>Filter
+                                </li>
+                                <li class="text-black text-xl cursor-pointer" onclick="sort_option()">
+                                    <i class="ri-sort-asc me-2 text-lg"></i>Sort
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="show_all_menu flex justify-end items-center px-5">
+                        <i class="ri-arrow-drop-down-line text-4xl show_all_menu_icon"></i>
+                    </div>
+                    <div class="absolute bottom-0 p-3 flex justify-center items-center gap-10 w-full">
+                        <div class="mobile_no flex gap-2">
+                            <i class="ri-phone-line text-2xl flex gap-2 items-center"></i>
+                            <p class="text-xl flex items-center">72757816XX</p>
+                        </div>
+                        <div class="social_icon flex gap-5">
+                            <a href="#"><i
+                                    class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
+                            <a href="#"><i
+                                    class="ri-instagram-line text-xl transition-all duration-300 hover:text-pink-600"></i></a>
+                            <a href="#"><i
+                                    class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
+                            <a href="#"><i
+                                    class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div
+            class="search_box_container hidden md:block bg-white p-5 border-gray-400 rounded-bl-lg border-solid border-t absolute top-0 right-0 -z-10">
+            <div class="search_box flex">
+                <input type="search" class="search_input px-5 py-2 w-52 rounded-l-lg" placeholder="Search Your Item">
+                <input type="submit" class="search_submit_input px-2 py-2 text-white w-16 rounded-r-lg !bg-blue-600"
+                    value="Search">
+            </div>
+            <!-- <i class="ri-close-circle-line absolute right-12 top-7 text-4xl"></i> -->
+        </div>
+        <div
+            class="mob_search_box_container flex justify-center md:hidden bg-white p-5 border-gray-400 rounded-b-lg border-solid border-t absolute -top-10 right-0 -z-10 w-full">
+            <div class="search_box flex">
+                <input type="search" class="search_input px-4 py-3 w-56 rounded-l-lg" placeholder="Search Your Item">
+                <input type="submit" class="search_submit_input px-4 py-3 text-white w-20 rounded-r-lg !bg-slate-600"
+                    value="Search">
+            </div>
+        </div>
+        <section class="product_section !p-10 w-full bg-white">
+            <div class="product_detail_container flex gap-10 w-full">
+                <div
+                    class="product_img flex justify-center items-center !w-1/2 border-gray-300 border-solid border sticky top-10">
+                    <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg" class="w-80 h-80 object-contain"
+                        alt="">
+                </div>
+                <div class="product_detail !w-3/4">
+                    <div class="breadcrumb">
+                        <ul class="flex gap-3 text-md">
+                            <li><a href="index.html" class="text-gray-500">Home</a></li>/
+                            <li><a href="product.html" class="breadcrumb_active text-black">Product</a></li>
+                        </ul>
+                    </div>
+                    <h2 class="pro_name mt-3 text-3xl font-semibold tracking-tight text-gray-900 dark:text-white">Allen
+                        Solly Analog premium Watch For Men</h2>
+                    <div class="pro_ratings text-white bg-green-500 py-1 px-2 mt-3 rounded-lg w-fit">4.2<i
+                            class="ri-star-s-fill ms-1"></i></div>
+                    <div class="pro_amount mt-5">
+                        <span
+                            class="pro_amount text-xl sm:text-2xl md:text-4xl font-bold text-gray-900 dark:text-white"><i
+                                class="fa-solid fa-indian-rupee-sign text-3xl"></i> 1,199
+                        </span>
+                        <span class="befor_pro_amount pro_amount line-through ms-5 text-xl text-gray-500"><i
+                                class="fa-solid fa-indian-rupee-sign text-lg"></i> 1,699</span>
+                    </div>
+                    <p class="pro_desc text-lg mt-3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur ducimus iste accusantium
+                        sunt cum quam incidunt? Doloremque perferendis beatae consequuntur fugit cum maiores incidunt
+                        iste. Consequuntur sapiente inventore tenetur vero.
+                    </p>
+                    <div class="pro_all_side_img w-full flex gap-5 mt-10">
+                        <div class="pro_side_img">
+                            <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg"
+                                class="w-24 h-24 object-contain rounded-sm cursor-pointer border-gray-200 hover:border-blue-500 border-solid border-2"
+                                alt="">
+                        </div>
+                        <div class="pro_side_img">
+                            <img src="assets/img/men/allen-solly/Analog Watch/watch-2.jpg"
+                                class="w-24 h-24 object-contain rounded-sm cursor-pointer border-gray-200 hover:border-blue-500 border-solid border-2"
+                                alt="">
+                        </div>
+                        <div class="pro_side_img">
+                            <img src="assets/img/men/allen-solly/Analog Watch/watch-3.jpg"
+                                class="w-24 h-24 object-contain rounded-sm cursor-pointer border-gray-200 hover:border-blue-500 border-solid border-2"
+                                alt="">
+                        </div>
+                        <div class="pro_side_img">
+                            <img src="assets/img/men/allen-solly/Analog Watch/watch-4.jpg"
+                                class="w-24 h-24 object-contain rounded-sm cursor-pointer border-gray-200 hover:border-blue-500 border-solid border-2"
+                                alt="">
+                        </div>
+                    </div>
+                    <div class="buy_add_cart_btn flex gap-5 mt-5">
+                        <a href="#"><button
+                                class="bg-blue-400 border border-solid border-blue-500 text-white w-52 p-4">Buy</button></a>
+                        <a href="#"><button
+                                class="bg-transparent border border-solid border-blue-500 text-blue-500 w-52 p-4">Add To
+                                Cart</button></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </section>
+
+        <footer class="bg-white dark:bg-gray-900 mt-10 px-8">
+            <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-between">
+                    <!-- <div class="mb-6 md:mb-0">
+                    <a href="index.html" class="flex items-center">
+                        <img src="https://flowbite.com/docs/images/logo.svg" class="h-8 me-3" alt="FlowBite Logo" />
+                        <span
+                            class="self-center text-2xl font-semibold whitespace-nowrap text-black">Tick Tock</span>
+                    </a>
+                </div> -->
+                    <div class="grid sm:grid-cols-3 md:grid-cols-4 gap-8 sm:gap-6">
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">CONTACT
+                                INFORMATION
+                            </h2>
+                            <h3 class="text-md">Address:</h3>
+                            <h4 class="text-md">Town Hall Ghazipur, 233001 Uttar Pradesh</h4>
+                            <h3 class="text-md">Phone:</h3>
+                            <h4 class="text-md">72757816XX</h4>
+                            <h3 class="text-md">Email:</h3>
+                            <h4 class="text-md">arbazxyz@gmail.com</h4>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">CUSTOM CARE
+                            </h2>
+                            <ul class="flex flex-col gap-2 text-gray-500 dark:text-gray-400 font-medium">
+                                <li>
+                                    <a href="https://flowbite.com/" class="hover:underline">My Account</a>
+                                </li>
+                                <li>
+                                    <a href="https://tailwindcss.com/" class="hover:underline">Shop</a>
+                                </li>
+                                <li>
+                                    <a href="https://tailwindcss.com/" class="hover:underline">Wishlist</a>
+                                </li>
+                                <li>
+                                    <a href="https://tailwindcss.com/" class="hover:underline">Contacts</a>
+                                </li>
+                                <li>
+                                    <a href="https://tailwindcss.com/" class="hover:underline">Terms & Conditions</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company
+                            </h2>
+                            <ul class="flex flex-col gap-2 text-gray-500 dark:text-gray-400 font-medium">
+                                <li>
+                                    <a href="https://github.com/themesberg/flowbite" class="hover:underline ">About
+                                        Us</a>
+                                </li>
+                                <li>
+                                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Delivery</a>
+                                </li>
+                                <li>
+                                    <a href="https://discord.gg/4eeurUVvTy" class="hover:underline">Payment</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Catagory</h2>
+                            <ul class="flex flex-col gap-2 text-gray-500 dark:text-gray-400 font-medium">
+                                <li>
+                                    <a href="#" class="hover:underline">Men</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Women</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="hover:underline">Kids</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+                <div class="sm:flex sm:items-center sm:justify-between">
+                    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a
+                            href="https://flowbite.com/" class="hover:underline">Arkdeveloper™</a>. All Rights Reserved.
+                    </span>
+                    <div class="flex mt-4 sm:justify-center sm:mt-0">
+                        <div class="social_icon flex gap-5 sm:ps-5 sm:border-gray-400 sm:border-solid sm:border-s">
+                            <a href="#"><i
+                                    class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
+                            <a href="#"><i
+                                    class="ri-instagram-line text-xl transition-all duration-300 hover:text-pink-600"></i></a>
+                            <a href="#"><i
+                                    class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
+                            <a href="#"><i
+                                    class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <!-- flowbite tailwind css cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+
+    <!-- script link -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

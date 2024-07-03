@@ -1,5 +1,7 @@
 /* google font link */
-@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Teko:wght@300..700&display=swap');
+
 
 * {
   font-family: "PT Sans Narrow", sans-serif;
@@ -173,4 +175,9 @@
 
 .product:hover a img {
   transform: scale(1.2);
+}
+
+.pro_amount{
+  font-family: "Teko", sans-serif;
+  font-weight: 455 !important;
 }
