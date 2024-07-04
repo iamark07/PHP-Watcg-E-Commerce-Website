@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/register.css">
+
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="tailwind_config/tailwind_output.css">
+
+    <!-- flowbite tailwind css cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- rimix icon cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- FONT AWESOME CDN LINK-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+    <title>Register</title>
+</head>
+
+<body>
+    <main class="bg-gray-50 relative">
+        <div class="register_form_container flex w-full">
+            <div class="register_wrapper flex w-full rounded-md overflow-hidden">
+                <div class="register_banner bg_blur_section flex justify-center items-center">
+                    <img src="assets/img/website-banner/banner-7.jpg" class=" w-full  h-screen object-cover" alt="">
+                </div>
+                <div class="register_form bg_blur_section bg-white">
+                    <form action="" class="py-7 px-10 reg_form hide_register_form">
+                        <h1 class="text-center text-4xl mb-7">Tick Tock</h1>
+                        <div class="input_boxes flex flex-col mt-3">
+                            <input type="text" placeholder="First Name" class="rounded-sm p-3 cursor-pointer">
+                        </div>
+                        <div class="input_boxes flex flex-col mt-3">
+                            <input type="text" placeholder="Last Name" class="rounded-sm p-3 cursor-pointer">
+                        </div>
+                        <div class="input_boxes flex flex-col mt-3">
+                            <input type="password" placeholder="Enter Password" class="rounded-sm p-3 cursor-pointer">
+                        </div>
+                        <div class="input_boxes flex flex-col mt-3">
+                            <input type="password" placeholder="Confirm Password" class="rounded-sm p-3 cursor-pointer">
+                        </div>
+                        <div class="input_boxes flex flex-col mt-3">
+                            <input type="text" placeholder="Mobile No" class="rounded-sm p-3 cursor-pointer">
+                        </div>
+                        <div class="input_boxes flex flex-col mt-3">
+                            <label for="dob" class="text-black">Date Of Birth</label>
+                            <input type="date" id="dob" class="rounded-sm p-3 cursor-pointer">
+                        </div>
+                        <div class="submit_btn mt-5 flex gap-3">
+                            <input type="submit" class="bg-blue-500 border border-solid border-blue-500 text-white py-3 px-8 rounded-sm">
+                            <button class="bg-white border border-solid border-blue-500 text-blue-500 py-3 px-8">Cancel</button>
+                        </div>
+                    </form>
+                    <div class="creat_account h-screen flex flex-col justify-center items-center">
+                        <h1 class="text-center text-4xl mt-5">Tick Tock</h1>
+                        <h3 class="mt-16 text-2xl">Creat an account</h3>
+                        <button class="bg-blue-500 text-white w-72 p-3 rounded-sm mt-10" onclick="show_reg_form()">Creat</button>
+                        <span class="flex mt-20 text-lg">Don't have an account?<a href="register.html" class="text-blue-500 font-bold ms-2">Log in</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+    <script src="assets/js/register.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
