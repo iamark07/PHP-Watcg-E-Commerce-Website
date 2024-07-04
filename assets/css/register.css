@@ -7,121 +7,8 @@
     font-family: "PT Sans Narrow", sans-serif;
 }
 
-/* search option */
-
-.search_box_container {
-    transition: all .5s;
-    /* top: 100.67px !important; */
-}
-
-.search_box_active {
-    top: 100.67px !important;
-    z-index: 30 !important;
-}
-
-.mob_search_box_container {
-    transition: all .5s;
-}
-
-.mob_search_box_active {
-    top: 56px !important;
-    z-index: 30 !important;
-}
-
-.menu_slider {
-    left: -100%;
-    transition: all .3s;
-}
-
-.open_menu_active {
-    left: 0% !important;
-}
-
-/* show all nav on mobile menu */
-
-.mob_all_nav_show {
-    transition: all .3s;
-    max-height: 0px;
-    overflow: hidden;
-}
-
-.all_nav_show_hide {
-    max-height: 500px !important;
-}
-
-.show_all_menu_icon {
-    transition: all .3s;
-}
-
-.show_all_menu_active {
-    transform: rotate(180deg);
-}
-
-.mob_nav_container {
-    overflow: auto;
-    box-shadow: rgb(224, 224, 224) 0px 0px 20px 5px inset;
-
-    /* background-color: red; */
-}
-
-.mob_nav_container::-webkit-scrollbar {
-    display: none;
-}
-
-.mob_nav_container_active {
-    height: calc(100vh - 200px);
-}
-
-.filter_container{
-    box-shadow: rgb(224, 224, 224) 0px 0px 20px 5px inset;
-}
-
-.mob_filter_content {
-    height: calc(100vh - 208.67px);
-}
-
-/* mobile filter option */
-
-.fixed_position {
-    position: fixed !important;
-    z-index: 999;
-    display: flex !important;
-}
-
-.show_mob_filter {
-    display: block !important;
-    border-top: 1px solid rgb(156, 163, 175) !important;
-}
-
-.show_mob_sort {
-    display: flex !important;
-    border-top: 1px solid rgb(156, 163, 175) !important;
-}
-
-.filter_content_values {
-    transition: all .5s linear;
-    max-height: 500px;
-}
-
-.hide_filter_values {
-    max-height: 0px !important;
-    overflow: hidden !important;
-    pointer-events: none;
-    /* padding: 0px !important; */
-}
-
-.progress_pointer {
-    left: 100%;
-    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
-}
-
-.pro_amount {
-    font-family: "Teko", sans-serif;
-    font-weight: 455 !important;
-}
-
 .register_form_container{
-    background-image: url(/assets/new-folder/10515253.png);
+    /* background-image: url(/assets/img/website-banner/register_banner.jpg); */
     background-size: 100% 100%;
     height: 100vh;
 }
@@ -131,3 +18,22 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
+.register_banner{
+    width: 65%;
+}
+
+.register_form{
+    width: 35%;
+}
+
+.hide_register_form{
+    display: none;
+}
+
+.show_register_form{
+    display: block !important;
+}
+
+.hide_creat_account{
+    display: none;
+}

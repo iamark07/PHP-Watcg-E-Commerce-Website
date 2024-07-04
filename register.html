@@ -20,185 +20,55 @@
     <!-- FONT AWESOME CDN LINK-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
 
-    <title>Products</title>
+    <title>Register</title>
 </head>
 
 <body>
     <main class="bg-gray-50 relative">
-        <header class="bg-white relative z-40  !border-gray-300 border-solid border-b">
-            <div
-                class="sub_header hidden md:flex justify-between px-5 py-3 !border-gray-300 border-solid border-b relative">
-                <div class="mobile_no flex gap-2 pe-5  !border-gray-300 border-solid border-e">
-                    <i class="ri-phone-line text-lg flex gap-2 items-center"></i>
-                    <p>72757816XX</p>
+        <div class="register_form_container flex w-full">
+            <div class="register_wrapper flex w-full rounded-md overflow-hidden">
+                <div class="register_banner bg_blur_section flex justify-center items-center">
+                    <img src="assets/img/website-banner/banner-7.jpg" class=" w-full  h-screen object-cover" alt="">
                 </div>
-                <nav class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <ul class="flex gap-5">
-                        <li class="text-blue-500"><a href="index.html">Home</a></li>
-                        <li class="text-black"><a href="about.html">About</a></li>
-                        <li class="text-black"><a href="service.html">Services</a></li>
-                        <li class="text-black"><a href="blogs.html">Blogs</a></li>
-                        <li class="text-black"><a href="contact.html">Contact</a></li>
-                    </ul>
-                </nav>
-                <div class="social_icon flex gap-5 ps-5 !border-gray-300 border-solid border-s">
-                    <a href="#"><i
-                            class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
-                    <a href="#"><i
-                            class="ri-instagram-line text-xl transition-all duration-300 hover:text-pink-600"></i></a>
-                    <a href="#"><i
-                            class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
-                    <a href="#"><i
-                            class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
-                </div>
-            </div>
-            <div class="main_header flex justify-between items-center px-5 py-3 lg:px-5 lg:py-5 md:relative">
-                <nav class="hidden md:block">
-                    <ul class="flex gap-5">
-                        <li class="text-black"><a href="#">Men</a></li>
-                        <li class="text-black"><a href="#">Women</a></li>
-                        <li class="text-black"><a href="#">Kids</a></li>
-                    </ul>
-                </nav>
-                <div class="logo md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
-                    <h2 class="text-black text-xl md:text-2xl">Tick Tock</h2>
-                </div>
-                <div class="user_section hidden md:block">
-                    <ul class="flex gap-5">
-                        <li class="text-black cursor-pointer flex gap-5">
-                            <i class="ri-search-eye-line" id="search_btn"></i>
-                        </li>
-                        <li class="text-black cursor-pointer"><a href="login.html">Log in</a></li>
-                        <li class="text-black cursor-pointer">Cart</li>
-                    </ul>
-                </div>
-                <div class="menu_icon md:hidden flex gap-5">
-                    <i class="ri-search-eye-line text-2xl cursor-pointer" id="mob_search_btn"></i>
-
-                    <i class="open_menu ri-menu-fold-2-line text-2xl" id="open_menu_btn"></i>
-                </div>
-                <div class="menu_slider fixed md:hidden top-0 bg-white z-50 w-full h-screen">
-                    <div class="menu_logo flex justify-between p-5">
-                        <div class="logo">
-                            <h2 class="text-black text-3xl">Tick Tock</h2>
-                        </div>
-                        <i class="close_menu ri-menu-unfold-2-line text-2xl" id="close_menu_btn"></i>
-                    </div>
-                    <div class="mob_nav_container rounded-lg mx-3">
-                        <nav class="mob_nav">
-                            <ul class="flex flex-col gap-5 p-5">
-                                <li class="text-black text-xl"><a href="index.html"><i class="ri-home-8-line pe-3"></i>Home</a>
-                                </li>
-                                <li class="text-black text-xl"><a href="about.html"><i class="ri-store-3-line pe-3"></i>About</a>
-                                </li>
-                                <li class="text-black text-xl"><a href="contact.html"><i
-                                            class="ri-contacts-book-3-line pe-3"></i>Contact</a></li>
-                                <li class="text-black text-xl cursor-pointer"><a href="login.html"><i
-                                        class="ri-login-circle-line pe-3"></i>Log in</a></li>
-                            </ul>
-                        </nav>
-                        <nav class="mob_all_nav_show">
-                            <ul class="flex flex-col pb-5 px-5 gap-5">
-                                <li class="text-black text-xl"><a href="#"><i class="ri-user-6-line pe-3"></i>Men</a>
-                                </li>
-                                <li class="text-black text-xl"><a href="#"><i class="ri-user-2-line pe-3"></i>Women</a>
-                                </li>
-                                <li class="text-black text-xl"><a href="#"><i class="ri-user-5-line pe-3"></i>Kids</a>
-                                </li>
-                                <li class="text-black text-xl"><a href="service.html"><i
-                                            class="ri-shake-hands-line pe-3"></i>Services</a></li>
-                                <li class="text-black text-xl"><a href="blog.html"><i class="ri-news-line pe-3"></i>Blogs</a>
-                                </li>
-                                <li class="text-black text-xl cursor-pointer"><i
-                                        class="ri-shopping-cart-2-line pe-3"></i>Cart
-                                </li>
-                                <li class="text-black text-xl cursor-pointer" onclick="filter_option()">
-                                    <i class="ri-filter-line me-2 text-lg"></i>Filter
-                                </li>
-                                <li class="text-black text-xl cursor-pointer" onclick="sort_option()">
-                                    <i class="ri-sort-asc me-2 text-lg"></i>Sort
-                                </li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="show_all_menu flex justify-end items-center px-5">
-                        <i class="ri-arrow-drop-down-line text-4xl show_all_menu_icon"></i>
-                    </div>
-                    <div class="absolute bottom-0 p-3 flex justify-center items-center gap-10 w-full">
-                        <div class="mobile_no flex gap-2">
-                            <i class="ri-phone-line text-2xl flex gap-2 items-center"></i>
-                            <p class="text-xl flex items-center">72757816XX</p>
-                        </div>
-                        <div class="social_icon flex gap-5">
-                            <a href="#"><i
-                                    class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
-                            <a href="#"><i
-                                    class="ri-instagram-line text-xl transition-all duration-300 hover:text-pink-600"></i></a>
-                            <a href="#"><i
-                                    class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
-                            <a href="#"><i
-                                    class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div
-            class="search_box_container hidden md:block bg-white p-5 !border-gray-300 rounded-bl-lg border-solid border absolute top-0 right-0 -z-10">
-            <div class="search_box flex">
-                <input type="search"
-                    class="search_input px-5 py-2 w-52 rounded-l-lg border border-solid border-gray-300"
-                    placeholder="Search Your Item">
-                <input type="submit" class="search_submit_input px-2 py-2 text-white w-16 rounded-r-lg !bg-blue-600"
-                    value="Search">
-            </div>
-        </div>
-        <div
-            class="mob_search_box_container flex justify-center md:hidden bg-white p-5 rounded-b-lg border border-solid !border-gray-300 absolute -top-10 right-0 -z-10 w-full">
-            <div class="search_box flex">
-                <input type="search"
-                    class="search_input px-4 py-3 w-56 rounded-l-lg border border-solid border-gray-300"
-                    placeholder="Search Your Item">
-                <input type="submit" class="search_submit_input px-4 py-3 text-white w-20 rounded-r-lg bg-blue-500"
-                    value="Search">
-            </div>
-        </div>
-        <div class="register_form_container flex justify-center items-center w-full py-5">
-            <div class="register_wrapper flex w-3/4 rounded-md overflow-hidden">
-                <div class="register_banner bg_blur_section w-1/2 flex justify-center items-center">
-                    <img src="assets/img/men/boat/boAt Lunar Space Plus/watch-1.jpg" class="w-96 h-96 object-contain" alt="">
-                </div>
-                <div class="register_form bg_blur_section w-1/2">
-                    <form action="" class="py-7 px-10">
+                <div class="register_form bg_blur_section bg-white">
+                    <form action="" class="py-7 px-10 reg_form hide_register_form">
+                        <h1 class="text-center text-4xl mb-7">Tick Tock</h1>
                         <div class="input_boxes flex flex-col mt-3">
-                            <input type="text" placeholder="First Name" class="rounded-md p-3 cursor-pointer">
+                            <input type="text" placeholder="First Name" class="rounded-sm p-3 cursor-pointer">
                         </div>
                         <div class="input_boxes flex flex-col mt-3">
-                            <input type="text" placeholder="Last Name" class="rounded-md p-3 cursor-pointer">
+                            <input type="text" placeholder="Last Name" class="rounded-sm p-3 cursor-pointer">
                         </div>
                         <div class="input_boxes flex flex-col mt-3">
-                            <input type="password" placeholder="Enter Password" class="rounded-md p-3 cursor-pointer">
+                            <input type="password" placeholder="Enter Password" class="rounded-sm p-3 cursor-pointer">
                         </div>
                         <div class="input_boxes flex flex-col mt-3">
-                            <input type="password" placeholder="Confirm Password" class="rounded-md p-3 cursor-pointer">
+                            <input type="password" placeholder="Confirm Password" class="rounded-sm p-3 cursor-pointer">
                         </div>
                         <div class="input_boxes flex flex-col mt-3">
-                            <input type="text" placeholder="Mobile No" class="rounded-md p-3 cursor-pointer">
+                            <input type="text" placeholder="Mobile No" class="rounded-sm p-3 cursor-pointer">
                         </div>
                         <div class="input_boxes flex flex-col mt-3">
-                            <label for="dob" class="text-white">Date Of Birth</label>
-                            <input type="date" id="dob" class="rounded-md p-3 cursor-pointer">
+                            <label for="dob" class="text-black">Date Of Birth</label>
+                            <input type="date" id="dob" class="rounded-sm p-3 cursor-pointer">
                         </div>
-                        <div class="submit_btn mt-5">
-                            <input type="submit" class=" bg-blue-500 text-white py-3 px-8 rounded-md">
+                        <div class="submit_btn mt-5 flex gap-3">
+                            <input type="submit" class="bg-blue-500 border border-solid border-blue-500 text-white py-3 px-8 rounded-sm">
+                            <button class="bg-white border border-solid border-blue-500 text-blue-500 py-3 px-8">Cancel</button>
                         </div>
                     </form>
+                    <div class="creat_account h-screen flex flex-col justify-center items-center">
+                        <h1 class="text-center text-4xl mt-5">Tick Tock</h1>
+                        <h3 class="mt-16 text-2xl">Creat an account</h3>
+                        <button class="bg-blue-500 text-white w-72 p-3 rounded-sm mt-10" onclick="show_reg_form()">Creat</button>
+                        <span class="flex mt-20 text-lg">Already have an account?<a href="login.html" class="text-blue-500 font-bold ms-2">Log in</a></span>
+                    </div>
                 </div>
             </div>
         </div>
 
     </main>
-
+    <script src="assets/js/register.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
