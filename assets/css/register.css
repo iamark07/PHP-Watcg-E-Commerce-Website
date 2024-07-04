@@ -18,7 +18,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.register_banner{
+.form_banner{
     width: 65%;
 }
 
@@ -35,5 +35,5 @@
 }
 
 .hide_creat_account{
-    display: none;
+    display: none !important;
 }

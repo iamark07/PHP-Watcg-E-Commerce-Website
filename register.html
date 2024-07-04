@@ -25,9 +25,9 @@
 
 <body>
     <main class="bg-gray-50 relative">
-        <div class="register_form_container flex w-full">
-            <div class="register_wrapper flex w-full rounded-md overflow-hidden">
-                <div class="register_banner bg_blur_section flex justify-center items-center">
+        <div class="form_container flex w-full">
+            <div class="form_wrapper flex w-full">
+                <div class="form_banner bg_blur_section flex justify-center items-center">
                     <img src="assets/img/website-banner/banner-7.jpg" class=" w-full  h-screen object-cover" alt="">
                 </div>
                 <div class="register_form bg_blur_section bg-white">
@@ -53,15 +53,16 @@
                             <input type="date" id="dob" class="rounded-sm p-3 cursor-pointer">
                         </div>
                         <div class="submit_btn mt-5 flex gap-3">
-                            <input type="submit" class="bg-blue-500 border border-solid border-blue-500 text-white py-3 px-8 rounded-sm">
-                            <button class="bg-white border border-solid border-blue-500 text-blue-500 py-3 px-8">Cancel</button>
+                            <input type="submit" class="bg-blue-500 border border-solid cursor-pointer border-blue-500 text-white py-3 px-8 rounded-sm">
+                            <span class="bg-white border border-solid border-blue-500 text-blue-500 py-3 px-8 cursor-pointer" onclick="close_register_form()">Cancel</span>
+
                         </div>
                     </form>
                     <div class="creat_account h-screen flex flex-col justify-center items-center">
                         <h1 class="text-center text-4xl mt-5">Tick Tock</h1>
                         <h3 class="mt-16 text-2xl">Creat an account</h3>
                         <button class="bg-blue-500 text-white w-72 p-3 rounded-sm mt-10" onclick="show_reg_form()">Creat</button>
-                        <span class="flex mt-20 text-lg">Already have an account?<a href="login.html" class="text-blue-500 font-bold ms-2">Log in</a></span>
+                        <span class="flex mt-20 text-lg">Already have an account?<a href="login.html" class="text-blue-500 font-bold ms-2 cursor-pointer">Log in</a></span>
                     </div>
                 </div>
             </div>
