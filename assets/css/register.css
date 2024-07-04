@@ -26,14 +26,28 @@
     width: 35%;
 }
 
+@media screen and (max-width:1024px) {
+    .register_form{
+        width: 100%;
+    }
+}
+
 .hide_register_form{
     display: none;
 }
 
 .show_register_form{
-    display: block !important;
+    display: flex !important;
 }
 
 .hide_creat_account{
+    display: none !important;
+}
+
+.show_pass{
+    display: block !important;
+}
+
+.hide_pass_icon{
     display: none !important;
 }

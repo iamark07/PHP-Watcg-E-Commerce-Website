@@ -27,17 +27,20 @@
     <main class="bg-gray-50 relative">
         <div class="form_container flex w-full">
             <div class="form_wrapper flex w-full">
-                <div class="form_banner bg_blur_section flex justify-center items-center">
+                <div class="form_banner bg_blur_section hidden lg:flex justify-center items-center">
                     <img src="assets/img/website-banner/banner-7.jpg" class=" w-full  h-screen object-cover" alt="">
                 </div>
                 <div class="login_form bg_blur_section bg-white">
-                    <form action="" class="py-7 px-10 flex-col justify-center h-screen log_form hide_login_form">
-                        <h1 class="text-center text-4xl mb-7">Tick Tock</h1>
+                    <form action="" class="py-7 px-10 flex-col items-center lg:items-start h-screen log_form hide_login_form">
+                        <h1 class="text-center text-4xl mb-14">Tick Tock</h1>
+                        <h1 class="text-center text-3xl mb-7">Login</h1>
                         <div class="input_boxes flex flex-col mt-3">
-                            <input type="text" placeholder="Full Name" class="rounded-sm p-3 cursor-pointer">
+                            <input type="text" placeholder="Full Name" class="w-72 md:w-96 rounded-sm p-3 cursor-pointer">
                         </div>
-                        <div class="input_boxes flex flex-col mt-3">
-                            <input type="password" placeholder="Enter Password" class="rounded-sm p-3 cursor-pointer">
+                        <div class="input_boxes flex flex-col mt-3 relative">
+                            <input type="password" id="pass" placeholder="Enter Password" class="w-72 md:w-96 rounded-sm p-3 cursor-pointer">
+                            <i class="ri-eye-off-line text-lg pass_icon_show absolute top-1/2 right-3 -translate-y-1/2" onclick="show_pass()"></i>
+                            <i class="ri-eye-line text-lg pass_icon_hide show_pass_icon absolute top-1/2 right-3 -translate-y-1/2 hidden" onclick="hide_pass()"></i>
                         </div>
                         <div class="submit_btn mt-5 flex gap-3">
                             <input type="submit" class="bg-blue-500 border border-solid border-blue-500 text-white py-3 px-8 rounded-sm">

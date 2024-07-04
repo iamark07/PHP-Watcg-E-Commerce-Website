@@ -7,12 +7,6 @@
     font-family: "PT Sans Narrow", sans-serif;
 }
 
-.register_form_container{
-    /* background-image: url(/assets/img/website-banner/register_banner.jpg); */
-    background-size: 100% 100%;
-    height: 100vh;
-}
-
 .bg_blur_section{
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.5);
@@ -26,6 +20,12 @@
     width: 35%;
 }
 
+@media screen and (max-width:1024px) {
+    .login_form{
+        width: 100%;
+    }
+}
+
 .hide_login_form{
     display: none;
 }
@@ -35,5 +35,13 @@
 }
 
 .hide_log_account{
+    display: none !important;
+}
+
+.show_pass{
+    display: block !important;
+}
+
+.hide_pass_icon{
     display: none !important;
 }
