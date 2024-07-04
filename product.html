@@ -73,7 +73,7 @@
                     </ul>
                 </div>
                 <div class="menu_icon md:hidden flex gap-5">
-                    <i class="ri-search-eye-line text-2xl" id="mob_search_btn"></i>
+                    <i class="ri-search-eye-line text-2xl cursor-pointer" id="mob_search_btn"></i>
 
                     <i class="open_menu ri-menu-fold-2-line text-2xl" id="open_menu_btn"></i>
                 </div>
@@ -146,7 +146,7 @@
         <div
             class="search_box_container hidden md:block bg-white p-5 !border-gray-300 rounded-bl-lg border-solid border absolute top-0 right-0 -z-10">
             <div class="search_box flex">
-                <input type="search" class="search_input px-5 py-2 w-52 rounded-l-lg" placeholder="Search Your Item">
+                <input type="search" class="search_input px-5 py-2 w-52 rounded-l-lg border border-solid border-gray-300" placeholder="Search Your Item">
                 <input type="submit" class="search_submit_input px-2 py-2 text-white w-16 rounded-r-lg !bg-blue-600"
                     value="Search">
             </div>
@@ -155,7 +155,7 @@
         <div
             class="mob_search_box_container flex justify-center md:hidden bg-white p-5 rounded-b-lg border border-solid !border-gray-300 absolute -top-10 right-0 -z-10 w-full">
             <div class="search_box flex">
-                <input type="search" class="search_input px-4 py-3 w-56 rounded-l-lg" placeholder="Search Your Item">
+                <input type="search" class="search_input px-4 py-3 w-56 rounded-l-lg border border-solid border-gray-300" placeholder="Search Your Item">
                 <input type="submit" class="search_submit_input px-4 py-3 text-white w-20 rounded-r-lg bg-blue-500"
                     value="Search">
             </div>
@@ -466,7 +466,7 @@
                             <button class="bg-blue-500 p-5 text-white" onclick="add_review_btn()">Add Your Review</button>
                             <div class="add_review_container close_add_review fixed top-0 left-0 z-50 w-full h-screen flex-col justify-center items-center bg_blur_section">
                                 <div class="add_review bg-white p-5 w-72 sm:w-96 md:w-1/2 flex flex-col justify-center items-start sm:p-10 rounded-md">
-                                    <textarea name="" id="" class="rounded-md w-full h-52" placeholder="Enter Your Review"></textarea>
+                                    <textarea name="" id="" class="rounded-md w-full h-52 outline-none border border-gray-300 border-solid" placeholder="Enter Your Review"></textarea>
                                     <input type="file" class="mt-5 rounded-sm">
                                     <div class="review_ratings flex gap-3 mt-5 text-xl">
                                         <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
