@@ -99,8 +99,8 @@
                         </nav>
                         <nav class="mob_all_nav_show">
                             <ul class="flex flex-col pb-5 px-5 gap-5">
-                                <li class="text-black text-xl"><a href="#"><i
-                                            class="ri-user-6-line pe-3"></i>Men</a></li>
+                                <li class="text-black text-xl"><a href="#"><i class="ri-user-6-line pe-3"></i>Men</a>
+                                </li>
                                 <li class="text-black text-xl"><a href="#"><i class="ri-user-2-line pe-3"></i>Women</a>
                                 </li>
                                 <li class="text-black text-xl"><a href="#"><i class="ri-user-5-line pe-3"></i>Kids</a>
@@ -164,13 +164,11 @@
             <div class="mob_filter_container w-1/2 bg-white p-5 !border-gray-300 border-solid border-e ">
                 <h2 class="text-center" class="filter_btn option_btn" onclick="filter_option()"><i
                         class="ri-filter-line me-2 text-lg"></i>Filter</h2>
-                <div
-                    class="hidden lg:hidden mob_filter fixed top-16 left-0 w-screen bg-white z-50 h-screen p-5">
+                <div class="hidden lg:hidden mob_filter fixed top-16 left-0 w-screen bg-white z-50 h-screen p-5">
                     <h2 class="text-3xl border-b !border-gray-300 py-1">Filter</h2>
                     <div class="filter_container mob_filter_content my-3 p-5 rounded-lg overflow-auto">
                         <div class="brand_filter">
-                            <h3 class="flex items-center text-xl mt-3">Brands <span
-                                    class="filter_value_hide_btn"><i
+                            <h3 class="flex items-center text-xl mt-3">Brands <span class="filter_value_hide_btn"><i
                                         class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
                             <ul class="mt-2 filter_content_values">
                                 <li class="ms-5 flex items-center">
@@ -212,8 +210,7 @@
                             </ul>
                         </div>
                         <div class="price_filter">
-                            <h3 class="flex items-center text-xl mt-3">Price <span
-                                    class="filter_value_hide_btn"><i
+                            <h3 class="flex items-center text-xl mt-3">Price <span class="filter_value_hide_btn"><i
                                         class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
                             <div class="progress_bar_container px-5 filter_content_values">
                                 <div class="price_progress_line mt-3 bg-blue-300 w-full h-1 rounded-lg">
@@ -230,23 +227,19 @@
                             </div>
                         </div>
                         <div class="category">
-                            <h3 class="flex items-center text-xl mt-3">Category <span
-                                    class="filter_value_hide_btn"><i
+                            <h3 class="flex items-center text-xl mt-3">Category <span class="filter_value_hide_btn"><i
                                         class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
                             <ul class="mt-2 filter_content_values">
-                                <li class="ms-5 flex items-center"><input type="checkbox"
-                                        class="me-2 text-lg">Men</li>
-                                <li class="ms-5 flex items-center"><input type="checkbox"
-                                        class="me-2 text-lg">Women
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Men</li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Women
                                 </li>
-                                <li class="ms-5 flex items-center"><input type="checkbox"
-                                        class="me-2 text-lg">Kids</li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Kids</li>
                             </ul>
                         </div>
                     </div>
                     <div class="filter_btn flex w-full absolute bottom-16 left-0">
-                        <button
-                            class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border"  onclick="filter_option()">Cancel</button>
+                        <button class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border"
+                            onclick="filter_option()">Cancel</button>
                         <button
                             class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border">Submit</button>
                     </div>
@@ -259,7 +252,7 @@
                     class="mob_sort hidden lg:hidden fixed top-16 left-1/2 -translate-x-1/2 bg-white z-50 p-5 w-1/2 justify-center">
                     <select name="sort" id="sort_by" class="cursor-pointer">
                         <option disabled selected>Choose</option>
-                        <option valu    e="men">Men</option>
+                        <option valu e="men">Men</option>
                         <option value="women">Women</option>
                         <option value="kids">Kids</option>
                     </select>
@@ -271,8 +264,15 @@
                 <div class="product_img_wrapper w-full">
                     <div
                         class="product_img sticky top-10 p-10 flex justify-center items-center !border-gray-300 border-solid border">
-                        <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg" class="w-52 h-52 lg:w-80 lg:h-80 object-contain"
-                            alt="">
+                        <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg"
+                            class="w-52 h-52 lg:w-80 lg:h-80 object-contain" alt="">
+                    </div>
+                </div>
+                <div class="show_side_img_container bg_blur_section fixed top-0 left-0 z-50 w-full h-screen hide_full_img items-center justify-center">
+                    <div class="show_side_img relative bg-white p-5 rounded-md">
+                        <img src="" class="full_side_img w-56 h-56 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain" alt="">
+                        <i class="ri-close-circle-line absolute -top-10 -right-5 sm:-right-10 text-white text-3xl cursor-pointer"
+                            onclick="close_full_img()"></i>
                     </div>
                 </div>
                 <div class="pro_all_side_img flex w-full lg:hidden gap-5">
@@ -313,11 +313,11 @@
                     <div class="pro_ratings text-white bg-green-500 py-1 px-2 mt-3 rounded-lg w-fit">4.2<i
                             class="ri-star-s-fill ms-1"></i></div>
                     <div class="pro_amount mt-5">
-                        <span
-                            class="pro_amount text-4xl font-bold text-gray-900 dark:text-white"><i
+                        <span class="pro_amount text-4xl font-bold text-gray-900 dark:text-white"><i
                                 class="fa-solid fa-indian-rupee-sign text-3xl"></i> 1,199
                         </span>
-                        <span class="befor_pro_amount pro_amount line-through ms-3 lg:ms-5 text-2xl lg:text-xl text-gray-500"><i
+                        <span
+                            class="befor_pro_amount pro_amount line-through ms-3 lg:ms-5 text-2xl lg:text-xl text-gray-500"><i
                                 class="fa-solid fa-indian-rupee-sign text-lg"></i> 1,699</span>
                     </div>
                     <p class="pro_desc text-lg text-justify mt-3">
@@ -347,12 +347,16 @@
                                 alt="">
                         </div>
                     </div>
-                    <div class="buy_add_cart_btn fixed lg:static bottom-0 left-0 w-full grid grid-cols-2 lg:flex lg:gap-5 mt-5">
+                    <div
+                        class="buy_add_cart_btn fixed lg:static bottom-0 left-0 w-full grid grid-cols-2 lg:flex lg:gap-5 mt-5">
                         <a href="#">
-                            <button class="bg-blue-500 border border-solid border-blue-500 text-white w-full lg:!w-52 p-4">Buy</button>
+                            <button
+                                class="bg-blue-500 border border-solid border-blue-500 text-white w-full lg:!w-52 p-4">Buy</button>
                         </a>
                         <a href="#">
-                            <button class="bg-white border border-solid border-blue-500 text-blue-500 w-full lg:!w-52 p-4">Add To Cart</button>
+                            <button
+                                class="bg-white border border-solid border-blue-500 text-blue-500 w-full lg:!w-52 p-4">Add
+                                To Cart</button>
                         </a>
                     </div>
                     <div class="specification mt-14">
@@ -394,48 +398,92 @@
                             <div class="show_ques bg-gray-100 rounded-lg p-3">
                                 <div class="user text-md"><i class="ri-user-3-fill me-2"></i>User Name</div>
                                 <div class="ques mt-3 text-lg md:text-xl">
-                                    <p>Q: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, expedita.</span></p>
+                                    <p>Q: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                                            expedita.</span></p>
                                 </div>
-                                <div class="answer mt-3 text-lg md:text-xl">A: <span class="text-md md:text-lg ">Lorem ipsum dolor sit amet.</span></div>
+                                <div class="answer mt-3 text-lg md:text-xl">A: <span class="text-md md:text-lg ">Lorem
+                                        ipsum dolor sit amet.</span></div>
                             </div>
                             <div class="show_ques bg-gray-100 rounded-lg p-3">
                                 <div class="user text-md"><i class="ri-user-3-fill me-2"></i>User Name</div>
                                 <div class="ques mt-3 text-lg md:text-xl">
-                                    <p>Q: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, expedita.</span></p>
+                                    <p>Q: <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum,
+                                            expedita.</span></p>
                                 </div>
-                                <div class="answer mt-3 text-lg md:text-xl">A: <span class="text-md md:text-lg ">Lorem ipsum dolor sit amet.</span></div>
+                                <div class="answer mt-3 text-lg md:text-xl">A: <span class="text-md md:text-lg ">Lorem
+                                        ipsum dolor sit amet.</span></div>
                             </div>
                         </div>
                     </div>
                     <div class="review_container">
                         <h2 class="text-3xl font-bold mt-14">Reviews</h2>
                         <div class="show_review_container mt-8 flex flex-col gap-5">
+                            <div
+                                class="show_review_img_container bg_blur_section fixed top-0 left-0 z-50 w-full h-screen review_hide_full_img items-center justify-center">
+                                <div class="show_side_img show_review_img relative bg-white p-5 rounded-md">
+                                    <img src="" class="full_review_img w-56 h-56 sm:w-80 sm:h-80  md:w-96 md:h-96 rounded-md object-contain"
+                                        alt="">
+                                    <i class="ri-close-circle-line absolute -top-10 -right-5 sm:-right-10 text-white text-3xl cursor-pointer"
+                                        onclick="close_review_full_img()"></i>
+                                </div>
+                            </div>
                             <div class="show_review border border-gray-200 border-solid p-3">
                                 <p class="text-base mt-2"><i class="ri-user-3-fill me-2"></i>User Name</p>
                                 <p class="text-md mt-2">Awesome Product <i></i></p>
                                 <div class="review_pro_img flex gap-3 mt-2">
-                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-4.jpg" class="w-20  h-20 object-contain border border-solid border-gray-200" alt="">
-                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-3.jpg" class="w-20  h-20 object-contain border border-solid border-gray-200" alt="">
-                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg" class="w-20  h-20 object-contain border border-solid border-gray-200" alt="">
-                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-2.jpg" class="w-20  h-20 object-contain border border-solid border-gray-200" alt="">
+                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-4.jpg"
+                                        class="review_img w-20  h-20 object-contain border border-solid border-gray-200 cursor-pointer"
+                                        alt="">
+                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-3.jpg"
+                                        class="review_img w-20  h-20 object-contain border border-solid border-gray-200 cursor-pointer"
+                                        alt="">
+                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg"
+                                        class="review_img w-20  h-20 object-contain border border-solid border-gray-200 cursor-pointer"
+                                        alt="">
+                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-2.jpg"
+                                        class="review_img w-20  h-20 object-contain border border-solid border-gray-200 cursor-pointer"
+                                        alt="">
                                 </div>
                             </div>
                             <div class="show_review border border-gray-200 border-solid p-3">
                                 <p class="text-base mt-2"><i class="ri-user-3-fill me-2"></i>User Name</p>
                                 <p class="text-md mt-2">Nice Product<i></i></p>
                                 <div class="review_pro_img flex gap-3 mt-2">
-                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-2.jpg" class="w-20  h-20 object-contain border border-solid border-gray-200" alt="">
-                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-4.jpg" class="w-20  h-20 object-contain border border-solid border-gray-200" alt="">
-                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-3.jpg" class="w-20  h-20 object-contain border border-solid border-gray-200" alt="">
-                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg" class="w-20  h-20 object-contain border border-solid border-gray-200" alt="">
+                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-2.jpg"
+                                        class="review_img w-20 h-20 object-contain border border-solid border-gray-200  cursor-pointer"
+                                        alt="">
+                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-4.jpg"
+                                        class="review_img w-20 h-20 object-contain border border-solid border-gray-200  cursor-pointer"
+                                        alt="">
+                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-3.jpg"
+                                        class="review_img w-20 h-20 object-contain border border-solid border-gray-200  cursor-pointer"
+                                        alt="">
+                                    <img src="assets/img/men/allen-solly/Analog Watch/watch-1.jpg"
+                                        class="review_img w-20 h-20 object-contain border border-solid border-gray-200  cursor-pointer"
+                                        alt="">
                                 </div>
                             </div>
-                            <button class="bg-blue-500 p-5 text-white">Add Your Review</button>
+                            <button class="bg-blue-500 p-5 text-white" onclick="add_review_btn()">Add Your Review</button>
+                            <div class="add_review_container close_add_review fixed top-0 left-0 z-50 w-full h-screen flex-col justify-center items-center bg_blur_section">
+                                <div class="add_review bg-white p-5 w-72 sm:w-96 md:w-1/2 flex flex-col justify-center items-start sm:p-10 rounded-md">
+                                    <textarea name="" id="" class="rounded-md w-full h-52" placeholder="Enter Your Review"></textarea>
+                                    <input type="file" class="mt-5 rounded-sm">
+                                    <div class="review_ratings flex gap-3 mt-5 text-xl">
+                                        <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                        <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                        <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                        <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                        <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                    </div>
+                                    <div class="review_save_cancel mt-5 flex gap-3">
+                                        <input type="submit" value="Save" class="cursor-pointer bg-blue-500 border border-solid border-blue-500 p-2 sm:p-3 w-20 sm:w-24 rounded-sm text-white" >
+                                        <button class="close_review_btn cursor-pointer bg-white border border-solid border-blue-500 p-2 sm:p-3 w-20 sm:w-24 rounded-sm text-blue-500" onclick="close_add_review()">Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-
             </div>
         </section>
         </section>
@@ -540,6 +588,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
 
     <!-- script link -->
+    <script src="assets/js/pro_detail.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 
