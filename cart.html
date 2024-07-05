@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- css link -->
+    <link rel="stylesheet" href="assets/css/cart.css">
+
+    <!-- tailwind css link -->
+    <link rel="stylesheet" href="tailwind_config/tailwind_output.css">
+
+    <!-- flowbite tailwind css cdn -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+
+    <!-- rimix icon cdn link -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- FONT AWESOME CDN LINK-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
+
+    <title>Wacth E-Commerce</title>
+</head>
+
+<body>
+    <main class="bg-gray-50 relative">
+        <header class="bg-white relative z-40  !border-gray-300 border-solid border-b">
+            <div
+                class="sub_header hidden md:flex justify-between px-5 py-3 !border-gray-300 border-solid border-b relative">
+                <div class="mobile_no flex gap-2 pe-5  !border-gray-300 border-solid border-e">
+                    <i class="ri-phone-line text-lg flex gap-2 items-center"></i>
+                    <p>72757816XX</p>
+                </div>
+                <nav class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                    <ul class="flex gap-5">
+                        <li class="text-black"><a href="index.html">Home</a></li>
+                        <li class="text-black"><a href="about.html">About</a></li>
+                        <li class="text-black"><a href="service.html">Services</a></li>
+                        <li class="text-black"><a href="blogs.html">Blogs</a></li>
+                        <li class="text-black"><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="social_icon flex gap-5 ps-5 !border-gray-300 border-solid border-s">
+                    <a href="#"><i
+                            class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
+                    <a href="#"><i
+                            class="ri-instagram-line text-xl transition-all duration-300 hover:text-pink-600"></i></a>
+                    <a href="#"><i
+                            class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
+                    <a href="#"><i
+                            class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
+                </div>
+            </div>
+            <div class="main_header flex justify-between items-center px-5 py-3 lg:px-5 lg:py-5 md:relative">
+                <nav class="hidden md:block">
+                    <ul class="flex gap-5">
+                        <li class="text-black"><a href="#">Men</a></li>
+                        <li class="text-black"><a href="#">Women</a></li>
+                        <li class="text-black"><a href="#">Kids</a></li>
+                    </ul>
+                </nav>
+                <div class="logo md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
+                    <h2 class="text-black text-xl md:text-2xl">Tick Tock</h2>
+                </div>
+                <div class="user_section hidden md:block">
+                    <ul class="flex gap-5">
+                        <li class="text-black cursor-pointer flex gap-5">
+                            <i class="ri-search-eye-line" id="search_btn"></i>
+                        </li>
+                        <li class="text-black cursor-pointer"><a href="login.html">Log in</a></li>
+                        <li class="text-blue-500 cursor-pointer"><a href="cart.html">Cart</a></li>
+                    </ul>
+                </div>
+                <div class="menu_icon md:hidden flex gap-5">
+                    <i class="ri-search-eye-line text-2xl cursor-pointer" id="mob_search_btn"></i>
+
+                    <i class="open_menu ri-menu-fold-2-line text-2xl" id="open_menu_btn"></i>
+                </div>
+                <div class="menu_slider fixed md:hidden top-0 bg-white z-50 w-full h-screen">
+                    <div class="menu_logo flex justify-between p-5">
+                        <div class="logo">
+                            <h2 class="text-black text-3xl">Tick Tock</h2>
+                        </div>
+                        <i class="close_menu ri-menu-unfold-2-line text-2xl" id="close_menu_btn"></i>
+                    </div>
+                    <div class="mob_nav_container rounded-lg mx-3">
+                        <nav class="mob_nav">
+                            <ul class="flex flex-col gap-5 p-5">
+                                <li class="text-black text-xl"><a href="index.html"><i
+                                            class="ri-home-8-line pe-3"></i>Home</a>
+                                </li>
+                                <li class="text-black text-xl"><a href="about.html"><i
+                                            class="ri-store-3-line pe-3"></i>About</a>
+                                </li>
+                                <li class="text-black text-xl"><a href="contact.html"><i
+                                            class="ri-contacts-book-3-line pe-3"></i>Contact</a></li>
+                                <li class="text-black text-xl cursor-pointer"><a href="login.html"><i
+                                            class="ri-login-circle-line pe-3"></i>Log in</a></li>
+                            </ul>
+                        </nav>
+                        <nav class="mob_all_nav_show">
+                            <ul class="flex flex-col pb-5 px-5 gap-5">
+                                <li class="text-black text-xl"><a href="#"><i class="ri-user-6-line pe-3"></i>Men</a>
+                                </li>
+                                <li class="text-black text-xl"><a href="#"><i class="ri-user-2-line pe-3"></i>Women</a>
+                                </li>
+                                <li class="text-black text-xl"><a href="#"><i class="ri-user-5-line pe-3"></i>Kids</a>
+                                </li>
+                                <li class="text-black text-xl"><a href="service.html"><i
+                                            class="ri-shake-hands-line pe-3"></i>Services</a></li>
+                                <li class="text-black text-xl"><a href="blog.html"><i
+                                            class="ri-news-line pe-3"></i>Blogs</a>
+                                </li>
+                                <li class="text-blue-500 text-xl cursor-pointer"><a href="cart.html"><i
+                                        class="ri-shopping-cart-2-line pe-3"></i>Cart</a>
+                                </li>
+                                <li class="text-black text-xl cursor-pointer" onclick="filter_option()">
+                                    <i class="ri-filter-line me-2 text-lg"></i>Filter
+                                </li>
+                                <li class="text-black text-xl cursor-pointer" onclick="sort_option()">
+                                    <i class="ri-sort-asc me-2 text-lg"></i>Sort
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="show_all_menu flex justify-end items-center px-5">
+                        <i class="ri-arrow-drop-down-line text-4xl show_all_menu_icon"></i>
+                    </div>
+                    <div class="absolute bottom-0 p-3 flex justify-center items-center gap-10 w-full">
+                        <div class="mobile_no flex gap-2">
+                            <i class="ri-phone-line text-2xl flex gap-2 items-center"></i>
+                            <p class="text-xl flex items-center">72757816XX</p>
+                        </div>
+                        <div class="social_icon flex gap-5">
+                            <a href="#"><i
+                                    class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
+                            <a href="#"><i
+                                    class="ri-instagram-line text-xl transition-all duration-300 hover:text-pink-600"></i></a>
+                            <a href="#"><i
+                                    class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
+                            <a href="#"><i
+                                    class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div
+            class="search_box_container hidden md:block bg-white p-5 !border-gray-300 rounded-bl-lg border-solid border-t absolute top-0 right-0 -z-10">
+            <div class="search_box flex">
+                <input type="search"
+                    class="search_input px-5 py-2 w-52 rounded-l-lg border border-solid border-gray-300"
+                    placeholder="Search Your Item">
+                <input type="submit" class="search_submit_input px-2 py-2 text-white w-16 rounded-r-lg !bg-blue-600"
+                    value="Search">
+            </div>
+            <!-- <i class="ri-close-circle-line absolute right-12 top-7 text-4xl"></i> -->
+        </div>
+        <div
+            class="mob_search_box_container flex justify-center md:hidden bg-white p-5 !border-gray-300 rounded-b-lg border-solid border-t absolute -top-10 right-0 -z-10 w-full">
+            <div class="search_box flex">
+                <input type="search"
+                    class="search_input px-4 py-3 w-56 rounded-l-lg border border-solid border-gray-300"
+                    placeholder="Search Your Item">
+                <input type="submit" class="search_submit_input px-4 py-3 text-white w-20 rounded-r-lg bg-blue-500"
+                    value="Search">
+            </div>
+        </div>
+        <div class="mob_filter_sort_container hidden sticky top-0 left-0 w-full">
+            <div class="mob_filter_container w-1/2 bg-white p-5 !border-gray-300 border-solid border-e ">
+                <h2 class="text-center" class="filter_btn option_btn" onclick="filter_option()"><i
+                        class="ri-filter-line me-2 text-lg"></i>Filter</h2>
+                <div class="hidden lg:hidden mob_filter fixed top-16 left-0 w-screen bg-white z-50 h-screen p-5">
+                    <h2 class="text-3xl border-b !border-gray-300 py-1">Filter</h2>
+                    <div class="filter_container mob_filter_content my-3 p-5 rounded-lg overflow-auto">
+                        <div class="brand_filter">
+                            <h3 class="flex items-center text-xl mt-3">Brands <span class="filter_value_hide_btn"><i
+                                        class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
+                            <ul class="mt-2 filter_content_values">
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_sonata">
+                                    <label for="mob_sonata" class="cursor-pointer text-lg">Sonata</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_titan">
+                                    <label for="mob_titan" class="cursor-pointer text-lg">Titan</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_boat">
+                                    <label for="mob_boat" class="cursor-pointer text-lg">Boat</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_allen-solly">
+                                    <label for="mob_allen-solly" class="cursor-pointer text-lg">Allen-Solly</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_fastrack">
+                                    <label for="mob_fastrack" class="cursor-pointer text-lg">Fastrack</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_fire-bolt">
+                                    <label for="mob_fire-bolt" class="cursor-pointer text-lg">Fire-Bolt</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_peter-england">
+                                    <label for="mob_peter-england" class="cursor-pointer">Peter-England</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_fossil">
+                                    <label for="mob_fossil" class="cursor-pointer text-lg">Fossil</label>
+                                </li>
+                                <li class="ms-5 flex items-center">
+                                    <input type="checkbox" class="me-2 cursor-pointer" id="mob_provogue">
+                                    <label for="mob_provogue" class="cursor-pointer text-lg">Provogue</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="price_filter">
+                            <h3 class="flex items-center text-xl mt-3">Price <span class="filter_value_hide_btn"><i
+                                        class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
+                            <div class="progress_bar_container px-5 filter_content_values">
+                                <div class="price_progress_line mt-3 bg-blue-300 w-full h-1 rounded-lg">
+                                    <div class="progress_bar bg-blue-500 w-1/4 h-1 rounded-lg relative">
+                                        <div
+                                            class="progress_pointer w-5 h-5 rounded-full bg-white absolute top-1/2 -translate-x-1/2 -translate-y-1/2 cursor-pointer">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="progress_amount_value w-full flex justify-between mt-2">
+                                    <div class="min_val text-lg">Rs. 0</div>
+                                    <div class="min_val text-lg">Rs. 10,000</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="category">
+                            <h3 class="flex items-center text-xl mt-3">Category <span class="filter_value_hide_btn"><i
+                                        class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
+                            <ul class="mt-2 filter_content_values">
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Men</li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Women
+                                </li>
+                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Kids</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter_btn flex w-full absolute bottom-16 left-0">
+                        <button class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border"
+                            onclick="filter_option()">Cancel</button>
+                        <button
+                            class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border">Submit</button>
+                    </div>
+                </div>
+            </div>
+            <div class="mob_sort_container w-1/2 bg-white p-5">
+                <h2 class="text-center" class="sort_btn option_btn" onclick="sort_option()"><i
+                        class="ri-sort-asc me-2 text-lg"></i>Sort By</h2>
+                <div
+                    class="mob_sort hidden lg:hidden fixed top-16 left-1/2 -translate-x-1/2 bg-white z-50 p-5 w-1/2 justify-center">
+                    <select name="sort" id="sort_by" class="cursor-pointer">
+                        <option disabled selected>Choose</option>
+                        <option valu e="men">Men</option>
+                        <option value="women">Women</option>
+                        <option value="kids">Kids</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <section class="cart_section p-10">
+            <h1 class="text-center text-4xl font-bold">Cart</h1>
+            <div class="cart_container md:flex justify-center gap-10 mt-14">
+                <div class="cart_items_wrapper flex flex-col gap-5 w-full">
+                    <div class="cart_all_detail">
+                        <div class="cart_item cart_shadow relative p-10 flex gap-10 bg-white rounded-lg">
+                            <div class="delete_cart_item_wrapper absolute flex items-center justify-center top-5 right-5 z-10 w-10 h-10 rounded-full cart_shadow">
+                                <i class="ri-delete-bin-2-line delete_cart_item text-red-500 text-xl"></i>
+                            </div>
+                            <div class="cart_img flex items-center">
+                                <img src="assets/img/men/allen-solly/Analog-Watch/watch-1.jpg"
+                                    class="w-36 h-36 object-contain" alt="">
+                            </div>
+                            <div class="cart_pro_detail_wrapper w-full">
+                                <div class="cart_pro_detail flex justify-between">
+                                    <h2 class="text-2xl font-bold">Solly Analog premium Watch For Men</h2>
+                                </div>
+                                <div class="cart_pro_color mt-2">
+                                    <h3 class="flex items-center text-lg">Color:<span class="ms-3 border-2 border-gray-400 border-solid bg-gray-200 inline-block w-6 h-6 rounded-full"></span></h3>
+                                </div>
+                                <p class="mt-2 in_stock text-lg text-green-500">In Stock</p>
+                                <div class="cart_rating flex gap-3 mt-2 text-xl">
+                                    <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                    <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                    <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                    <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                    <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                </div>
+                                <div class="item_quantity_wrapper flex mt-5 cart_shadow w-fit bg-white">
+                                    <i
+                                        class="decrease_item ri-subtract-line text-lg p-2 inline-block border border-solid border-gray-300 cursor-pointer rounded-s"></i>
+                                    <span
+                                        class="no_of_item item_quantity text-lg py-2 px-8 border-y border-solid border-gray-300 inline-block">1</span>
+                                    <i
+                                        class="increase_item ri-add-line text-lg p-2 inline-block border border-solid border-gray-300 cursor-pointer rounded-r"></i>
+                                </div>
+                            </div>
+                            <h3 class="cart_item_amount flex items-center">
+                                <span class="pro_amount flex gap-2 text-4xl font-bold text-gray-900 dark:text-white" style="font-size: 38px;"><i
+                                        class="fa-solid fa-indian-rupee-sign !text-3xl"></i> 1,199
+                                </span>
+                            </h3>
+                            <button class="absolute bottom-5 right-5 rounded-sm bg-blue-500 text-white text-lg py-3 px-8"><i class="ri-shopping-bag-4-line me-3"></i>Buy</button>
+                        </div>
+                    </div>
+                    <div class="cart_all_detail">
+                        <div class="cart_item cart_shadow relative p-10 flex gap-10 bg-white rounded-lg">
+                            <div class="delete_cart_item_wrapper absolute flex items-center justify-center top-5 right-5 z-10 w-10 h-10 rounded-full cart_shadow">
+                                <i class="ri-delete-bin-2-line delete_cart_item text-red-500 text-xl"></i>
+                            </div>
+                            <div class="cart_img flex items-center">
+                                <img src="assets/img/men/allen-solly/Analog-Watch/watch-1.jpg"
+                                    class="w-36 h-36 object-contain" alt="">
+                            </div>
+                            <div class="cart_pro_detail_wrapper w-full">
+                                <div class="cart_pro_detail flex justify-between">
+                                    <h2 class="text-2xl font-bold">Solly Analog premium Watch For Men</h2>
+                                </div>
+                                <div class="cart_pro_color mt-2">
+                                    <h3 class="flex items-center text-lg">Color:<span class="ms-3 border-2 border-gray-400 border-solid bg-gray-200 inline-block w-6 h-6 rounded-full"></span></h3>
+                                </div>
+                                <p class="mt-2 in_stock text-lg text-green-500">In Stock</p>
+                                <div class="cart_rating flex gap-3 mt-2 text-xl">
+                                    <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                    <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                    <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                    <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                    <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
+                                </div>
+                                <div class="item_quantity_wrapper flex mt-5 cart_shadow w-fit bg-white">
+                                    <i
+                                        class="decrease_item ri-subtract-line text-lg p-2 inline-block border border-solid border-gray-300 cursor-pointer rounded-s"></i>
+                                    <span
+                                        class="no_of_item item_quantity text-lg py-2 px-8 border-y border-solid border-gray-300 inline-block">1</span>
+                                    <i
+                                        class="increase_item ri-add-line text-lg p-2 inline-block border border-solid border-gray-300 cursor-pointer rounded-r"></i>
+                                </div>
+                            </div>
+                            <h3 class="cart_item_amount flex items-center">
+                                <span class="pro_amount flex gap-2 text-4xl font-bold text-gray-900 dark:text-white" style="font-size: 38px;"><i
+                                        class="fa-solid fa-indian-rupee-sign !text-3xl"></i> 1,199
+                                </span>
+                            </h3>
+                            <button class="absolute bottom-5 right-5 rounded-sm bg-blue-500 text-white text-lg py-3 px-8"><i class="ri-shopping-bag-4-line me-3"></i>Buy</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="total_order_amount_container">
+                    <div class="total_order_amount cart_shadow bg-white w-96 p-5 rounded-lg sticky top-14">
+                        <h2 class="text-xl font-bold">Total Cart</h2>
+                        <div class="total_order_amount mt-3">
+                            <p class="flex text-md justify-between">Solly Analog premium Watch For Men 
+                                <span class="pro_amount flex items-center gap-2 text-gray-900 dark:text-white" style="font-size: 20px;">
+                                    <i class="fa-solid fa-indian-rupee-sign" style="font-size: 14px;"></i> 1,199
+                                </span>
+                            </p>
+                            <p class="flex text-md justify-between">Solly Analog premium Watch For Men 
+                                <span class="pro_amount flex items-center gap-2 text-gray-900 dark:text-white" style="font-size: 20px;">
+                                    <i class="fa-solid fa-indian-rupee-sign" style="font-size: 14px;"></i> 1,199
+                                </span>
+                            </p>
+                            <p class="flex text-md justify-between">Sales Tax
+                                <span class="pro_amount flex items-center gap-2 text-gray-900 dark:text-white" style="font-size: 20px;">
+                                    <i class="fa-solid fa-indian-rupee-sign" style="font-size: 14px;"></i> 20
+                                </span>
+                            </p>
+                            <p class="flex text-md justify-between">Shipping
+                                <span class="pro_amount flex items-center gap-2 text-gray-900 dark:text-white" style="font-size: 20px;">
+                                    <i class="fa-solid fa-indian-rupee-sign" style="font-size: 14px;"></i> Free
+                                </span>
+                            </p>
+                            <div class="total mt-10 pt-5 border-t border-solid border-gray-300">
+                                <p class="flex text-2xl justify-between">Total
+                                    <span class="pro_amount flex items-center gap-2 text-green-500" style="font-size: 30px;">
+                                        <i class="fa-solid fa-indian-rupee-sign" style="font-size: 24px;"></i> 2,420
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cart_proceed_back flex gap-3 mt-10">
+                            <button class="w-32 p-3 bg-blue-500 text-white rounded-sm border border-solid border-blue-500">Proceed</button>
+                            <button class="w-32 p-3 bg-white text-blue-500 rounded-sm border border-solid border-blue-500">Cancel</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
