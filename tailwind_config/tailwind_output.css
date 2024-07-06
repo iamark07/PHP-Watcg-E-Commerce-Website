@@ -1989,6 +1989,10 @@ video {
     width: 13rem;
   }
 
+  .md\:w-72 {
+    width: 18rem;
+  }
+
   .md\:min-w-24 {
     min-width: 6rem;
   }
@@ -2056,6 +2060,16 @@ video {
   .md\:py-7 {
     padding-top: 1.75rem;
     padding-bottom: 1.75rem;
+  }
+
+  .md\:\!py-7 {
+    padding-top: 1.75rem !important;
+    padding-bottom: 1.75rem !important;
+  }
+
+  .md\:\!py-5 {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
   }
 
   .md\:pb-5 {
