@@ -20,7 +20,7 @@
     <!-- FONT AWESOME CDN LINK-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet" />
 
-    <title>Wacth E-Commerce</title>
+    <title>Cart</title>
 </head>
 
 <body>
@@ -146,8 +146,7 @@
                 </div>
             </div>
         </header>
-        <div
-            class="search_box_container hidden md:block bg-white p-5 !border-gray-300 rounded-bl-lg border-solid border-t absolute top-0 right-0 -z-10">
+        <div class="search_box_container hidden md:block bg-white p-5 !border-gray-300 rounded-bl-lg border-solid border-t absolute top-0 right-0 -z-10">
             <div class="search_box flex">
                 <input type="search"
                     class="search_input px-5 py-2 w-52 rounded-l-lg border border-solid border-gray-300"
@@ -266,9 +265,19 @@
                 </div>
             </div>
         </div>
+        <div class="breadcrumb mt-5 mx-5">
+            <ul class="flex gap-3 text-md">
+                <li>
+                    <a href="index.html" class="text-gray-500">Home</a>
+                </li>/
+                <li>
+                    <a href="cart.html" class="breadcrumb_active text-black">Cart</a>
+                </li>
+            </ul>
+        </div>
         <section class="cart_section p-6 md:p-10">
-            <h1 class="text-center text-4xl font-bold">Cart</h1>
-            <div class="cart_container flex !flex-col lg:!flex-row justify-center gap-10 mt-14">
+            <h1 class="text-center hidden md:block text-4xl font-bold">Cart</h1>
+            <div class="cart_container flex !flex-col lg:!flex-row justify-center gap-10 md:mt-14">
                 <div class="cart_items_wrapper flex flex-col gap-5 w-full">
                     <div class="cart_all_detail">
                         <div class="cart_item cart_shadow relative p-7 md:p-10 bg-white rounded-lg">
@@ -365,16 +374,16 @@
                                     <span
                                         class="no_of_item item_quantity text-lg py-2 px-5 border-y border-solid border-gray-300 inline-block">1</span>
                                     <i
-                                        class="increase_item ri-add-line text-lg p-2 inline-block border border-solid border-gray-300 cursor-pointer rounded-r"></i>
+                                        class="increase_item ri-add-line text-lg p-2 inline-block border ‍border-solid border-gray-300 cursor-pointer rounded-r"></i>
                                 </div>
-                                <button
+      ‍‍                          <button
                                     class="rounded-sm bg-blue-500 text-white text-lg h-fit py-2 px-8 md:!px-10"><i
                                         class="ri-shopping-bag-4-line me-2"></i>Buy</button>
                             </div>
 
                         </div>
-                    </div>
-                    <!-- <div class="cart_all_detail">
+                    </div>‍
+                    <!-- <div class="cart_all_detail">‍
                         <div class="cart_item cart_shadow relative p-10 flex gap-10 bg-white rounded-lg">
                             <div class="delete_cart_item_wrapper absolute flex items-center justify-center top-5 right-5 z-10 w-10 h-10 rounded-full cart_shadow">
                                 <i class="ri-delete-bin-2-line delete_cart_item text-red-500 text-xl"></i>
@@ -454,8 +463,9 @@
                             </div>
                         </div>
                         <div class="cart_proceed_back flex gap-3 mt-10">
-                            <button
+                            <a href="user_address.html"><button
                                 class="w-32 p-3 bg-blue-500 text-white rounded-sm border border-solid border-blue-500">Proceed</button>
+                            </a>
                             <button
                                 class="w-32 p-3 bg-white text-blue-500 rounded-sm border border-solid border-blue-500">Cancel</button>
                         </div>

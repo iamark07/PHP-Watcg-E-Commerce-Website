@@ -7,6 +7,14 @@
   font-family: "PT Sans Narrow", sans-serif;
 }
 
+header nav ul li{
+  transition: all .3s;
+}
+
+header nav ul li:hover{
+  color: rgb(59, 130,246);
+}
+
 /* search option */
 
 .search_box_container {

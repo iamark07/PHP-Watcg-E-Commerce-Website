@@ -1,0 +1,14 @@
+/* google font link */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Teko:wght@300..700&display=swap');
+
+
+* {
+    font-family: "PT Sans Narrow", sans-serif;
+}
+
+/* search option */
+
+.cart_shadow {
+    box-shadow: 0px 0px 10px 0px rgb(212, 212, 212);
+  }
