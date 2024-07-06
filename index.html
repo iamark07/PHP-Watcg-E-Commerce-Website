@@ -32,7 +32,7 @@
                     <p>72757816XX</p>
                 </div>
                 <nav class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <ul class="flex gap-5">
+                    <ul class="animate_text_color flex gap-5">
                         <li class="text-blue-500"><a href="index.html">Home</a></li>
                         <li class="text-black"><a href="about.html">About</a></li>
                         <li class="text-black"><a href="service.html">Services</a></li>
@@ -51,19 +51,21 @@
                             class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
                 </div>
             </div>
-            <div class="main_header flex justify-between items-center px-5 py-3 lg:px-5 lg:py-5 md:relative">
+            <div class="main_header flex justify-between items-center px-5 py-3 md:py-7 lg:px-5 lg:py-5 md:relative">
                 <nav class="hidden md:block">
-                    <ul class="flex gap-5">
+                    <ul class="animate_text_color flex gap-5">
                         <li class="text-black"><a href="#">Men</a></li>
                         <li class="text-black"><a href="#">Women</a></li>
                         <li class="text-black"><a href="#">Kids</a></li>
                     </ul>
                 </nav>
                 <div class="logo md:absolute md:top-1/2 md:left-1/2 md:-translate-x-1/2 md:-translate-y-1/2">
-                    <h2 class="text-black text-xl md:text-2xl">Tick Tock</h2>
+                    <a href="index.html">
+                        <img src="assets/img/website-logo/Logo.png" class="w-36 md:w-52" alt="">
+                    </a>
                 </div>
                 <div class="user_section hidden md:block">
-                    <ul class="flex gap-5">
+                    <ul class="animate_text_color flex gap-5">
                         <li class="text-black cursor-pointer flex gap-5">
                             <i class="ri-search-eye-line" id="search_btn"></i>
                         </li>
@@ -271,7 +273,7 @@
             <aside class="hidden lg:w-1/4 lg:block lg:py-3 xl:py-5">
                 <div class="aside_content w-full sticky top-5 bg-white rounded-lg p-5">
                     <h2 class="text-2xl border-b !border-gray-300 py-1">Filter</h2>
-                    <div class="filter_container my-3 p-3 rounded-lg overflow-auto">
+                    <div class="filter_container p-3 rounded-lg overflow-auto">
                         <div class="brand_filter">
                             <h3 class="flex items-center text-lg mt-3">Brands <span class="filter_value_hide_btn"><i
                                         class="ri-arrow-drop-down-line text-2xl ms-2 cursor-pointer"></i></span></h3>
@@ -329,10 +331,9 @@
                 </div>
             </aside>
             <div class="md:my-5 w-full lg:w-3/4">
-                <div
-                    class="sort_option hidden lg:flex w-full sticky z-50 top-5 md:px-5 md:py-3 justify-between items-center bg-white rounded-lg">
+                <div class="sort_option hidden lg:flex w-full sticky z-50 top-5 md:px-5 md:py-3 justify-between items-center bg-white rounded-lg">
                     <h3>Sort By :</h3>
-                    <select name="sort" id="sort_by" class="cursor-pointer rounded-lg bg-blue-600 text-white">
+                    <select name="sort" id="sort_by" class="cursor-pointer rounded-lg border-blue-500 border-solid border bg-blue-500 text-white">
                         <option disabled selected>Choose</option>
                         <option value="men">Men</option>
                         <option value="women">Women</option>
@@ -344,9 +345,9 @@
                         <h2 class="text-center" class="filter_btn option_btn" onclick="filter_option()"><i
                                 class="ri-filter-line me-2 text-lg"></i>Filter</h2>
                         <div
-                            class="hidden lg:hidden mob_filter fixed top-16 left-0 w-screen bg-white z-50 h-screen p-5">
+                            class="hidden lg:hidden mob_filter fixed left-0 w-screen bg-white z-50 h-screen p-5">
                             <h2 class="text-3xl border-b !border-gray-300 py-1">Filter</h2>
-                            <div class="filter_container mob_filter_content my-3 p-5 rounded-lg overflow-auto">
+                            <div class="filter_container mob_filter_content p-5 rounded-lg overflow-auto">
                                 <div class="brand_filter">
                                     <h3 class="flex items-center text-xl mt-3">Brands <span
                                             class="filter_value_hide_btn"><i
@@ -494,7 +495,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,199</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -546,7 +547,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,699</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -598,7 +599,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,899</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
 
@@ -651,7 +652,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -704,7 +705,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,799</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -757,7 +758,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,299</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -809,7 +810,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 999</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -861,7 +862,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -913,7 +914,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,099</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -966,7 +967,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,599</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1018,7 +1019,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,299</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1070,7 +1071,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 899</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1122,7 +1123,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,999</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1174,7 +1175,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,399</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1226,7 +1227,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,499</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1278,7 +1279,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1330,7 +1331,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 799</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1382,7 +1383,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 3,499</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1434,7 +1435,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,799</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1486,7 +1487,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 3,599</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1538,7 +1539,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,599</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
@@ -1590,7 +1591,7 @@
                                 <span
                                     class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,3   99</span>
                                 <a href="#"
-                                    class="text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-600">Add
+                                    class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>

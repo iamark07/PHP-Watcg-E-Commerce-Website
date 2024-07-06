@@ -26,14 +26,13 @@
 <body>
     <main class="bg-gray-50 relative">
         <header class="bg-white relative z-40  !border-gray-300 border-solid border-b">
-            <div
-                class="sub_header hidden md:flex justify-between px-5 py-3 !border-gray-300 border-solid border-b relative">
+            <div class="sub_header hidden md:flex justify-between px-5 py-3 !border-gray-300 border-solid border-b relative">
                 <div class="mobile_no flex gap-2 pe-5  !border-gray-300 border-solid border-e">
                     <i class="ri-phone-line text-lg flex gap-2 items-center"></i>
                     <p>72757816XX</p>
                 </div>
                 <nav class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                    <ul class="flex gap-5">
+                    <ul class="animate_text_color flex gap-5">
                         <li class="text-black"><a href="index.html">Home</a></li>
                         <li class="text-black"><a href="about.html">About</a></li>
                         <li class="text-black"><a href="service.html">Services</a></li>
@@ -54,7 +53,7 @@
             </div>
             <div class="main_header flex justify-between items-center px-5 py-3 lg:px-5 lg:py-5 md:relative">
                 <nav class="hidden md:block">
-                    <ul class="flex gap-5">
+                    <ul class="animate_text_color flex gap-5">
                         <li class="text-black"><a href="#">Men</a></li>
                         <li class="text-black"><a href="#">Women</a></li>
                         <li class="text-black"><a href="#">Kids</a></li>
@@ -64,7 +63,7 @@
                     <h2 class="text-black text-xl md:text-2xl">Tick Tock</h2>
                 </div>
                 <div class="user_section hidden md:block">
-                    <ul class="flex gap-5">
+                    <ul class="animate_text_color flex gap-5">
                         <li class="text-black cursor-pointer flex gap-5">
                             <i class="ri-search-eye-line" id="search_btn"></i>
                         </li>
@@ -112,7 +111,7 @@
                                 <li class="text-black text-xl"><a href="blog.html"><i
                                             class="ri-news-line pe-3"></i>Blogs</a>
                                 </li>
-                                <li class="text-blue-500 text-xl cursor-pointer"><a href="cart.html"><i
+                                <li class="text-black text-xl cursor-pointer"><a href="cart.html"><i
                                         class="ri-shopping-cart-2-line pe-3"></i>Cart</a>
                                 </li>
                                 <li class="text-black text-xl cursor-pointer" onclick="filter_option()">
@@ -166,7 +165,7 @@
             <div class="mob_filter_container w-1/2 bg-white p-5 !border-gray-300 border-solid border-e ">
                 <h2 class="text-center" class="filter_btn option_btn" onclick="filter_option()"><i
                         class="ri-filter-line me-2 text-lg"></i>Filter</h2>
-                <div class="hidden lg:hidden mob_filter fixed top-16 left-0 w-screen bg-white z-50 h-screen p-5">
+                <div class="hidden lg:hidden mob_filter fixed left-0 w-screen bg-white z-50 h-screen p-5">
                     <h2 class="text-3xl border-b !border-gray-300 py-1">Filter</h2>
                     <div class="filter_container mob_filter_content my-3 p-5 rounded-lg overflow-auto">
                         <div class="brand_filter">
@@ -251,7 +250,7 @@
                 <h2 class="text-center" class="sort_btn option_btn" onclick="sort_option()"><i
                         class="ri-sort-asc me-2 text-lg"></i>Sort By</h2>
                 <div
-                    class="mob_sort hidden lg:hidden fixed top-16 left-1/2 -translate-x-1/2 bg-white z-50 p-5 w-1/2 justify-center">
+                    class="mob_sort hidden lg:hidden fixed left-1/2 -translate-x-1/2 bg-white z-50 p-5 w-1/2 justify-center">
                     <select name="sort" id="sort_by" class="cursor-pointer">
                         <option disabled selected>Choose</option>
                         <option valu e="men">Men</option>
@@ -303,10 +302,10 @@
                     <div class="breadcrumb">
                         <ul class="flex gap-3 text-md">
                             <li>
-                                <a href="index.html" class="text-gray-500">Home</a>
+                                <a href="index.html" class="text-black">Home</a>
                             </li>/
                             <li>
-                                <a href="product.html" class="breadcrumb_active text-black">Product</a>
+                                <a href="product.html" class="breadcrumb_active text-blue-500">Product</a>
                             </li>
                         </ul>
                     </div>
@@ -356,7 +355,7 @@
                         class="buy_add_cart_btn fixed lg:static bottom-0 left-0 w-full grid grid-cols-2 lg:flex lg:gap-5 mt-5">
                         <a href="cart.html">
                             <button
-                                class="bg-blue-500 border border-solid border-blue-500 text-white w-full lg:!w-52 p-4">Buy</button>
+                                class="animate-btn-color bg-blue-500 border border-solid border-blue-500 text-white w-full lg:!w-52 p-4">Buy</button>
                         </a>
                         <a href="#">
                             <button
@@ -468,7 +467,7 @@
                                         alt="">
                                 </div>
                             </div>
-                            <button class="bg-blue-500 p-5 text-white" onclick="add_review_btn()">Add Your Review</button>
+                            <button class="animate-btn-color bg-blue-500 p-5 border border-solid border-blue-500 text-white" onclick="add_review_btn()">Add Your Review</button>
                             <div class="add_review_container close_add_review fixed top-0 left-0 z-50 w-full h-screen flex-col justify-center items-center bg_blur_section">
                                 <div class="add_review bg-white p-5 w-72 sm:w-96 md:w-1/2 flex flex-col justify-center items-start sm:p-10 rounded-md">
                                     <textarea name="" id="" class="rounded-md w-full h-52 outline-none border border-gray-300 border-solid" placeholder="Enter Your Review"></textarea>
