@@ -31,13 +31,6 @@ open_menu_btn.addEventListener("click" , ()=> {
 // close_menu_btn.addEventListener("click" , ()=> {
 //     document.querySelector(".menu_slider").classList.remove("open_menu_active");
 // })
-let show_all_menu_icon = document.querySelector(".show_all_menu_icon");
-
-show_all_menu_icon.addEventListener("click", ()=> {
-    // console.log("hello");
-    document.querySelector(".mob_nav ul").classList.toggle("all_nav_show_hide");
-    document.querySelector(".show_all_menu_icon").classList.toggle("show_all_menu_active");
-});
 
 // show all filter content
 

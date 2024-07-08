@@ -58,17 +58,12 @@
 }
 
 .mob_nav ul{
-  max-height: 220px;
-  overflow: hidden;
+  max-height: calc(100dvh - 208px) !important;
+  overflow: auto;
   transition: all .5s;
 }
 
-.all_nav_show_hide {
-  max-height: calc(100dvh - 265px) !important;
-  overflow: auto !important;
-}
-
-.all_nav_show_hide::-webkit-scrollbar {
+.mob_nav ul::-webkit-scrollbar {
   display: none;
 }
 
@@ -87,6 +82,10 @@
   box-shadow: 0px 0px 15px 5px rgb(95, 95, 95) inset;
 }
 
+.nav_active{
+  box-shadow: 0px 0px 15px 5px rgb(95, 95, 95) inset;
+}
+
 /* show all nav on mobile menu */
 
 /* .mob_all_nav_show {
@@ -94,15 +93,6 @@
   max-height: 0px;
   overflow: hidden;
 } */
-
-.show_all_menu_icon {
-  transition: all .3s;
-}
-
-.show_all_menu_active {
-  transform: rotate(180deg);
-}
-
 
 
 .brand_logo {
