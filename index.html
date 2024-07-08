@@ -26,7 +26,8 @@
 <body>
     <main class="bg-gray-50 relative">
         <header class="bg-white relative z-40  !border-gray-300 border-solid border-b">
-            <div class="sub_header hidden md:flex justify-between px-5 py-3 !border-gray-300 border-solid border-b relative">
+            <div
+                class="sub_header hidden md:flex justify-between px-5 py-3 !border-gray-300 border-solid border-b relative">
                 <div class="mobile_no flex gap-2 pe-5  !border-gray-300 border-solid border-e">
                     <i class="ri-phone-line text-lg flex gap-2 items-center"></i>
                     <p>72757816XX</p>
@@ -51,7 +52,8 @@
                             class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
                 </div>
             </div>
-            <div class="main_header flex justify-between items-center ps-3 pe-5 md:px-5 py-2 md:!py-5 lg:px-5 lg:py-5 md:relative">
+            <div
+                class="main_header flex justify-between items-center ps-3 pe-5 md:px-5 py-2 md:!py-5 lg:px-5 lg:py-5 md:relative">
                 <nav class="hidden md:block">
                     <ul class="animate_text_color flex gap-5">
                         <li class="text-black"><a href="#">Men</a></li>
@@ -78,64 +80,93 @@
 
                     <i class="open_menu ri-menu-fold-2-line text-2xl" id="open_menu_btn"></i>
                 </div>
-                <div class="menu_slider fixed md:hidden top-0 bg-white z-50 w-full h-screen">
-                    <div class="menu_logo flex justify-between p-5">
-                        <div class="logo">
-                            <a href="index.html">
-                                <img src="assets/img/website-logo/Logo.png" class="w-36" alt="">
-                            </a>
+                <div class="menu_slider fixed md:hidden top-0 z-50 w-2/3 h-screen">
+                    <div class="menu_slider_header p-3 bg-white">
+                        <div class="menu_logo flex justify-between">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="assets/img/website-logo/Logo.png" class="w-36" alt="">
+                                </a>
+                            </div>
+                            <!-- <i class="close_menu ri-menu-unfold-2-line " id="close_menu_btn"></i> -->
+                            <span class="flex flex-col items-center gap-1"><i
+                                    class="ri-logout-circle-line text-xl"></i>Log Out</span>
                         </div>
-                        <i class="close_menu ri-menu-unfold-2-line text-2xl" id="close_menu_btn"></i>
+                        <div class="mob_user_name text-xl mt-5 mx-3">
+                            <span class="flex items-center text-gray-700"><i
+                                    class="fa-solid fa-user me-3 rounded-full border border-gray-700 border-solid w-10 h-10 !grid place-items-center"></i>Arbaz
+                                Karimi</span>
+                        </div>
                     </div>
-                    <div class="mob_nav_container rounded-lg mx-3">
+                    <div class="mob_nav_container rounded-lg">
                         <nav class="mob_nav">
-                            <ul class="flex flex-col gap-5 p-5">
+                            <ul class="flex flex-col gap-2 ps-5 py-5">
                                 <li class="text-blue-500 text-xl"><a href="index.html"><i
                                             class="ri-home-8-line pe-3"></i>Home</a>
                                 </li>
-                                <li class="text-black text-xl"><a href="about.html"><i
+                                <li class="text-white text-xl"><a href="about.html"><i
                                             class="ri-store-3-line pe-3"></i>About</a>
                                 </li>
-                                <li class="text-black text-xl"><a href="contact.html"><i
+                                <li class="text-white text-xl"><a href="contact.html"><i
                                             class="ri-contacts-book-3-line pe-3"></i>Contact</a></li>
-                                <li class="text-black text-xl cursor-pointer"><a href="login.html"><i
+                                <li class="text-white text-xl cursor-pointer"><a href="login.html"><i
                                             class="ri-login-circle-line pe-3"></i>Log in</a></li>
-                            </ul>
-                        </nav>
-                        <nav class="mob_all_nav_show">
-                            <ul class="flex flex-col pb-5 px-5 gap-5">
-                                <li class="text-black text-xl"><a href="#"><i class="ri-user-6-line pe-3"></i>Men</a>
+                                <li class="text-white text-xl"><a href="#"><i class="ri-user-6-line pe-3"></i>Men</a>
                                 </li>
-                                <li class="text-black text-xl"><a href="#"><i class="ri-user-2-line pe-3"></i>Women</a>
+                                <li class="text-white text-xl"><a href="#"><i class="ri-user-2-line pe-3"></i>Women</a>
                                 </li>
-                                <li class="text-black text-xl"><a href="#"><i class="ri-user-5-line pe-3"></i>Kids</a>
+                                <li class="text-white text-xl"><a href="#"><i class="ri-user-5-line pe-3"></i>Kids</a>
                                 </li>
-                                <li class="text-black text-xl"><a href="service.html"><i
+                                <li class="text-white text-xl"><a href="service.html"><i
                                             class="ri-shake-hands-line pe-3"></i>Services</a></li>
-                                <li class="text-black text-xl"><a href="blog.html"><i
+                                <li class="text-white text-xl"><a href="blog.html"><i
                                             class="ri-news-line pe-3"></i>Blogs</a>
                                 </li>
-                                <li class="text-black text-xl cursor-pointer"><a href="cart.html"><i
-                                        class="ri-shopping-cart-2-line pe-3"></i>Cart</a>
+                                <li class="text-white text-xl cursor-pointer"><a href="cart.html"><i
+                                            class="ri-shopping-cart-2-line pe-3"></i>Cart</a>
                                 </li>
-                                <li class="text-black text-xl cursor-pointer" onclick="filter_option()">
+                                <li class="text-white text-xl cursor-pointer" onclick="filter_option()">
                                     <i class="ri-filter-line me-2 text-lg"></i>Filter
                                 </li>
-                                <li class="text-black text-xl cursor-pointer" onclick="sort_option()">
+                                <li class="text-white text-xl cursor-pointer" onclick="sort_option()">
                                     <i class="ri-sort-asc me-2 text-lg"></i>Sort
                                 </li>
                             </ul>
                         </nav>
+                        <!-- <nav class="mob_all_nav_show">
+                            <ul class="flex flex-col pb-5 px-5 gap-5">
+                                <li class="text-white text-xl"><a href="#"><i class="ri-user-6-line pe-3"></i>Men</a>
+                                </li>
+                                <li class="text-white text-xl"><a href="#"><i class="ri-user-2-line pe-3"></i>Women</a>
+                                </li>
+                                <li class="text-white text-xl"><a href="#"><i class="ri-user-5-line pe-3"></i>Kids</a>
+                                </li>
+                                <li class="text-white text-xl"><a href="service.html"><i
+                                            class="ri-shake-hands-line pe-3"></i>Services</a></li>
+                                <li class="text-white text-xl"><a href="blog.html"><i
+                                            class="ri-news-line pe-3"></i>Blogs</a>
+                                </li>
+                                <li class="text-white text-xl cursor-pointer"><a href="cart.html"><i
+                                        class="ri-shopping-cart-2-line pe-3"></i>Cart</a>
+                                </li>
+                                <li class="text-white text-xl cursor-pointer" onclick="filter_option()">
+                                    <i class="ri-filter-line me-2 text-lg"></i>Filter
+                                </li>
+                                <li class="text-white text-xl cursor-pointer" onclick="sort_option()">
+                                    <i class="ri-sort-asc me-2 text-lg"></i>Sort
+                                </li>
+                            </ul>
+                        </nav> -->
                     </div>
                     <div class="show_all_menu flex justify-end items-center px-5">
-                        <i class="ri-arrow-drop-down-line text-4xl show_all_menu_icon"></i>
+                        <i class="ri-arrow-drop-down-line text-4xl text-white show_all_menu_icon"></i>
                     </div>
-                    <div class="absolute bottom-0 p-3 flex justify-center items-center gap-10 w-full">
+                    <div class="absolute bottom-0 text-white p-3 w-full">
                         <div class="mobile_no flex gap-2">
                             <i class="ri-phone-line text-2xl flex gap-2 items-center"></i>
                             <p class="text-xl flex items-center">72757816XX</p>
                         </div>
-                        <div class="social_icon flex gap-5">
+                        <!-- <div class="social_icon flex gap-5">
                             <a href="#"><i
                                     class="ri-facebook-circle-line text-xl transition-all duration-300 hover:text-blue-600"></i></a>
                             <a href="#"><i
@@ -144,14 +175,17 @@
                                     class="ri-twitter-x-line text-xl transition-all duration-300 hover:text-gray-500"></i></a>
                             <a href="#"><i
                                     class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
         </header>
-        <div class="search_box_container hidden md:block bg-white p-5 !border-gray-300 rounded-bl-lg border-solid border-t absolute top-0 right-0 -z-10">
+        <div
+            class="search_box_container hidden md:block bg-white p-5 !border-gray-300 rounded-bl-lg border-solid border-t absolute top-0 right-0 -z-10">
             <div class="search_box flex">
-                <input type="search" class="search_input px-5 py-2 w-52 rounded-l-lg border border-solid border-gray-300" placeholder="Search Your Item">
+                <input type="search"
+                    class="search_input px-5 py-2 w-52 rounded-l-lg border border-solid border-gray-300"
+                    placeholder="Search Your Item">
                 <input type="submit" class="search_submit_input px-2 py-2 text-white w-16 rounded-r-lg !bg-blue-600"
                     value="Search">
             </div>
@@ -160,7 +194,9 @@
         <div
             class="mob_search_box_container flex justify-center md:hidden bg-white p-5 !border-gray-300 rounded-b-lg border-solid border-t absolute -top-10 right-0 -z-10 w-full">
             <div class="search_box flex">
-                <input type="search" class="search_input px-4 py-3 w-56 rounded-l-lg border border-solid border-gray-300" placeholder="Search Your Item">
+                <input type="search"
+                    class="search_input px-4 py-3 w-56 rounded-l-lg border border-solid border-gray-300"
+                    placeholder="Search Your Item">
                 <input type="submit" class="search_submit_input px-4 py-3 text-white w-20 rounded-r-lg bg-blue-500"
                     value="Search">
             </div>
@@ -333,9 +369,11 @@
                 </div>
             </aside>
             <div class="md:my-5 w-full lg:w-3/4">
-                <div class="sort_option hidden lg:flex w-full sticky z-50 top-5 md:px-5 md:py-3 justify-between items-center bg-white rounded-lg">
+                <div
+                    class="sort_option hidden lg:flex w-full sticky z-50 top-5 md:px-5 md:py-3 justify-between items-center bg-white rounded-lg">
                     <h3>Sort By :</h3>
-                    <select name="sort" id="sort_by" class="cursor-pointer rounded-lg border-blue-500 border-solid border bg-blue-500 text-white">
+                    <select name="sort" id="sort_by"
+                        class="cursor-pointer rounded-lg border-blue-500 border-solid border bg-blue-500 text-white">
                         <option disabled selected>Choose</option>
                         <option value="men">Men</option>
                         <option value="women">Women</option>
@@ -346,8 +384,7 @@
                     <div class="mob_filter_container w-1/2 bg-white p-5  !border-gray-300 border-solid border-e ">
                         <h2 class="text-center" class="filter_btn option_btn" onclick="filter_option()"><i
                                 class="ri-filter-line me-2 text-lg"></i>Filter</h2>
-                        <div
-                            class="hidden lg:hidden mob_filter fixed left-0 w-screen bg-white z-50 h-screen p-5">
+                        <div class="hidden lg:hidden mob_filter fixed left-0 w-screen bg-white z-50 h-screen p-5">
                             <h2 class="text-3xl border-b !border-gray-300 py-1">Filter</h2>
                             <div class="filter_container mob_filter_content p-5 rounded-lg overflow-auto">
                                 <div class="brand_filter">
@@ -369,7 +406,8 @@
                                         </li>
                                         <li class="ms-5 flex items-center">
                                             <input type="checkbox" class="me-2 cursor-pointer" id="mob_allen-solly">
-                                            <label for="mob_allen-solly" class="cursor-pointer text-lg">Allen-Solly</label>
+                                            <label for="mob_allen-solly"
+                                                class="cursor-pointer text-lg">Allen-Solly</label>
                                         </li>
                                         <li class="ms-5 flex items-center">
                                             <input type="checkbox" class="me-2 cursor-pointer" id="mob_fastrack">
@@ -428,7 +466,8 @@
                             </div>
                             <div class="filter_btn flex w-full absolute bottom-16 left-0">
                                 <button
-                                    class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border"  onclick="filter_option()">Cancel</button>
+                                    class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border"
+                                    onclick="filter_option()">Cancel</button>
                                 <button
                                     class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border">Submit</button>
                             </div>
@@ -441,7 +480,7 @@
                             class="mob_sort hidden lg:hidden fixed top-16 left-1/2 -translate-x-1/2 bg-white z-50 p-5 w-1/2 justify-center">
                             <select name="sort" id="sort_by" class="cursor-pointer">
                                 <option disabled selected>Choose</option>
-                                <option valu    e="men">Men</option>
+                                <option valu e="men">Men</option>
                                 <option value="women">Women</option>
                                 <option value="kids">Kids</option>
                             </select>
@@ -495,20 +534,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,199</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 1,199</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/boat/boAt-Lunar-Seek/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Boat Lunar Seek Smart Watch</h5>
@@ -547,20 +587,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,699</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 1,699</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/boat/boAt-Lunar-Space-Plus/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Boat Lunar Space Plus Smart Watch </h5>
@@ -599,8 +640,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,899</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 1,899</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
@@ -608,12 +650,12 @@
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/boat/boAt-Wave-Neo-Plus/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Boat Wave Neo Plus Smart Watch</h5>
@@ -652,24 +694,25 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/fastrack/Bold-Fonts-Analog/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Fastrack Bold Fonts Analog Watch For Men
-                                    </h5>
+                                </h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -705,24 +748,25 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,799</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 1,799</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/fastrack/sunburn-watch/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Fastrack Bold Fonts Analog Watch For Men
-                                    </h5>
+                                </h5>
                             </a>
                             <div class="flex items-center mt-2.5 mb-5">
                                 <div class="flex items-center space-x-1 rtl:space-x-reverse">
@@ -758,20 +802,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,299</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 1,299</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/women/allen-solly/Analog-Watch/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Allen Solley Analog Watch For Women</h5>
@@ -810,20 +855,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 999</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 999</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/fire-bolt/Fire-Boltt-Hunter/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Fire Boltt Hunter Smart Watch</h5>
@@ -862,20 +908,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/fire-bolt/Fire-Boltt-Hurricane/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Fire Boltt Hurricane Smart Watch</h5>
@@ -914,21 +961,22 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,099</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 2,099</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/fire-bolt/Fire-Boltt-Ninja-Calling-Pro/watch-1.jpg"
                                 alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Fire Boltt Ninja Calling Pro Smart Pro</h5>
@@ -967,20 +1015,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,599</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 1,599</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/fossil/GRANT-SPOR-Analog-Watch/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Fossil Grant Spor Analog Watch For Men</h5>
@@ -1019,20 +1068,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,299</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 1,299</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/women/fastrack/Tees-Analog-Watch/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Fastrack Tees Analog Watch For Women<h5>
@@ -1071,20 +1121,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 899</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 899</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/fossil/RHETT-Analog-Watch/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Fossil Rhett Analog Watch For Men</h5>
@@ -1123,20 +1174,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,999</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 2,999</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/Peter-England/analog-watch-1/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Peter England Analog Watch For Men</h5>
@@ -1175,20 +1227,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,399</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 2,399</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/Peter-England/analog-watch-2/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Peter England Premium Analog Watch For Men</h5>
@@ -1227,20 +1280,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,499</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 2,499</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/provogue/Dial-Quartz-Analog/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Provogue Dial Quartz Analog Watch For Men</h5>
@@ -1279,20 +1333,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 1,399</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/provogue/semi-water-resistant/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Provogue Semi Water Resistant Analog Watch For Men</h5>
@@ -1331,20 +1386,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 799</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 799</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/sonata/analog-watch-1/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Sonata Premium Analog Watch For Men</h5>
@@ -1383,20 +1439,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 3,499</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 3,499</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/sonata/analog-watch-2/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Sonata Analog Watch For Men</h5>
@@ -1435,20 +1492,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,799</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 2,799</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/sonata/analog-watch-3/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Sonata Glossy Look Analog Watch For Men</h5>
@@ -1487,20 +1545,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 3,599</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 3,599</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/Titan/Karishma-refresher-Analog/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Tiatn Karishma Refresher Analog Watch For Men</h5>
@@ -1539,20 +1598,21 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,599</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 2,599</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>
                         </div>
                     </div>
                     <div class="product w-full bg-white rounded-lg shadow">
-                        <a href="#" class="flex justify-center">
+                        <a href="product.html" class="flex justify-center">
                             <img class="p-8 rounded-t-lg !w-36 !h-36 sm:!w-48 sm:!h-48 md:!w-52 md:!h-52"
                                 src="assets/img/men/Titan/Neo-Gents-V/watch-1.jpg" alt="product image" />
                         </a>
                         <div class="px-3 md:px-5 pb-3 md:pb-5">
-                            <a href="#">
+                            <a href="product.html">
                                 <h5
                                     class="whitespace-nowrap overflow-hidden text-ellipsis !text-md sm:!text-lg md:!text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
                                     Titan Neo Gents V Analog Watch For Men</h5>
@@ -1591,8 +1651,9 @@
                             </div>
                             <div class="flex items-center justify-between">
                                 <span
-                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i class="fa-solid fa-indian-rupee-sign"></i> 2,3   99</span>
-                                <a href="#"
+                                    class="pro_amount text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white"><i
+                                        class="fa-solid fa-indian-rupee-sign"></i> 2,3 99</span>
+                                <a href="cart.html"
                                     class="animate-btn-color border border-solid border-blue-500 text-white outline-none font-medium rounded-lg text-sm px-3 md:px-5 py-2.5 text-center bg-blue-500">Add
                                     to cart</a>
                             </div>

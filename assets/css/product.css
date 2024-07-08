@@ -40,6 +40,8 @@
 .menu_slider {
     left: -100%;
     transition: all .3s;
+    backdrop-filter: blur(15px);
+    background-color: rgba(0, 00, 0, 0.5);
 }
 
 .open_menu_active {
@@ -68,9 +70,6 @@
 
 .mob_nav_container {
     overflow: auto;
-    box-shadow: rgb(224, 224, 224) 0px 0px 20px 5px inset;
-
-    /* background-color: red; */
 }
 
 .mob_nav_container::-webkit-scrollbar {
@@ -78,7 +77,7 @@
 }
 
 .mob_nav_container_active {
-    height: calc(100vh - 200px);
+    height: calc(100vh - 240px);
 }
 
 .filter_container {

@@ -832,6 +832,10 @@ video {
   display: inline-flex;
 }
 
+.\!grid {
+  display: grid !important;
+}
+
 .grid {
   display: grid;
 }
@@ -941,6 +945,10 @@ video {
   width: 4rem;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-20 {
   width: 5rem;
 }
@@ -998,10 +1006,6 @@ video {
   width: 100vw;
 }
 
-.w-40 {
-  width: 10rem;
-}
-
 .min-w-14 {
   min-width: 3.5rem;
 }
@@ -1040,6 +1044,10 @@ video {
   flex-direction: column;
 }
 
+.place-items-center {
+  place-items: center;
+}
+
 .items-start {
   align-items: flex-start;
 }
@@ -1062,6 +1070,10 @@ video {
 
 .\!gap-3 {
   gap: 0.75rem !important;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-10 {
@@ -1244,6 +1256,11 @@ video {
 .border-gray-400 {
   --tw-border-opacity: 1;
   border-color: rgb(156 163 175 / var(--tw-border-opacity));
+}
+
+.border-gray-700 {
+  --tw-border-opacity: 1;
+  border-color: rgb(55 65 81 / var(--tw-border-opacity));
 }
 
 .\!bg-blue-600 {
@@ -1456,16 +1473,16 @@ video {
   padding-inline-end: 1.25rem;
 }
 
+.ps-3 {
+  padding-inline-start: 0.75rem;
+}
+
 .ps-5 {
   padding-inline-start: 1.25rem;
 }
 
 .pt-5 {
   padding-top: 1.25rem;
-}
-
-.ps-3 {
-  padding-inline-start: 0.75rem;
 }
 
 .text-center {
@@ -1578,6 +1595,11 @@ video {
 .text-gray-500 {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity));
+}
+
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
 }
 
 .text-gray-900 {
@@ -1985,14 +2007,6 @@ video {
     width: 24rem;
   }
 
-  .md\:w-52 {
-    width: 13rem;
-  }
-
-  .md\:w-72 {
-    width: 18rem;
-  }
-
   .md\:min-w-24 {
     min-width: 6rem;
   }
@@ -2032,6 +2046,11 @@ video {
     padding-right: 2.5rem !important;
   }
 
+  .md\:\!py-5 {
+    padding-top: 1.25rem !important;
+    padding-bottom: 1.25rem !important;
+  }
+
   .md\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -2062,16 +2081,6 @@ video {
     padding-bottom: 1.75rem;
   }
 
-  .md\:\!py-7 {
-    padding-top: 1.75rem !important;
-    padding-bottom: 1.75rem !important;
-  }
-
-  .md\:\!py-5 {
-    padding-top: 1.25rem !important;
-    padding-bottom: 1.25rem !important;
-  }
-
   .md\:pb-5 {
     padding-bottom: 1.25rem;
   }
@@ -2089,11 +2098,6 @@ video {
   .md\:\!text-xl {
     font-size: 1.25rem !important;
     line-height: 1.75rem !important;
-  }
-
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .md\:text-3xl {
