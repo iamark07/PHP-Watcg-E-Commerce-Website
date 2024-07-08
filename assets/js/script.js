@@ -55,7 +55,18 @@ function filter_option(){
 
 }
 
-// sort option function
+// sort option 
+
+document.querySelectorAll(".sort_select_btn").forEach(sort_btn =>{
+    sort_btn.addEventListener("click", ()=>{
+        let sort_list = sort_btn.nextElementSibling;
+        sort_list.classList.toggle("show_sort");
+        let sort_arrow = sort_btn.querySelector('i.select_down_arrow');
+        sort_arrow.classList.toggle("select_down_up");
+    });
+});
+
+// mob sort option function
 
 function sort_option(){
     document.querySelector(".mob_sort").classList.toggle("show_mob_sort");

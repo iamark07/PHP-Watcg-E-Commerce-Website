@@ -26,7 +26,8 @@
 <body>
     <main class="bg-gray-50 relative">
         <header class="bg-white relative z-40  !border-gray-300 border-solid border-b">
-            <div class="sub_header hidden md:flex justify-between px-5 py-3 !border-gray-300 border-solid border-b relative">
+            <div
+                class="sub_header hidden md:flex justify-between px-5 py-3 !border-gray-300 border-solid border-b relative">
                 <div class="mobile_no flex gap-2 pe-5  !border-gray-300 border-solid border-e">
                     <i class="ri-phone-line text-lg flex gap-2 items-center"></i>
                     <p>72757816XX</p>
@@ -51,7 +52,8 @@
                             class="ri-whatsapp-line text-xl transition-all duration-300 hover:text-green-600"></i></a>
                 </div>
             </div>
-            <div class="main_header flex justify-between items-center ps-3 pe-5 md:px-5 py-2 md:!py-5 lg:px-5 lg:py-5 md:relative">
+            <div
+                class="main_header flex justify-between items-center ps-3 pe-5 md:px-5 py-2 md:!py-5 lg:px-5 lg:py-5 md:relative">
                 <nav class="hidden md:block">
                     <ul class="animate_text_color flex gap-5">
                         <li class="text-black"><a href="#">Men</a></li>
@@ -92,7 +94,8 @@
                         </div>
                         <div class="mob_user_name text-xl mt-5 mx-3">
                             <span class="flex items-center text-gray-700"><i
-                                    class="fa-solid fa-user me-3 rounded-full border border-gray-700 border-solid w-10 h-10 !grid place-items-center"></i>User Name</span>
+                                    class="fa-solid fa-user me-3 rounded-full border border-gray-700 border-solid w-10 h-10 !grid place-items-center"></i>User
+                                Name</span>
                         </div>
                     </div>
                     <div class="mob_nav_container rounded-lg">
@@ -180,7 +183,9 @@
         <div
             class="search_box_container hidden md:block bg-white p-5 !border-gray-300 rounded-bl-lg border-solid border absolute top-0 right-0 -z-10">
             <div class="search_box flex">
-                <input type="search" class="search_input px-5 py-2 w-52 rounded-l-lg border border-solid border-gray-300" placeholder="Search Your Item">
+                <input type="search"
+                    class="search_input px-5 py-2 w-52 rounded-l-lg border border-solid border-gray-300"
+                    placeholder="Search Your Item">
                 <input type="submit" class="search_submit_input px-2 py-2 text-white w-16 rounded-r-lg !bg-blue-600"
                     value="Search">
             </div>
@@ -188,20 +193,23 @@
         <div
             class="mob_search_box_container flex justify-center md:hidden bg-white p-5 rounded-b-lg border border-solid !border-gray-300 absolute -top-10 right-0 -z-10 w-full">
             <div class="search_box flex">
-                <input type="search" class="search_input px-4 py-3 w-56 rounded-l-lg border border-solid border-gray-300" placeholder="Search Your Item">
+                <input type="search"
+                    class="search_input px-4 py-3 w-56 rounded-l-lg border border-solid border-gray-300"
+                    placeholder="Search Your Item">
                 <input type="submit" class="search_submit_input px-4 py-3 text-white w-20 rounded-r-lg bg-blue-500"
                     value="Search">
             </div>
         </div>
-        <div class="mob_filter_sort_container hidden sticky top-0 left-0 w-full">
-            <div class="mob_filter_container w-1/2 bg-white p-5 !border-gray-300 border-solid border-e ">
+        <div class="mob_filter_sort_container flex lg:hidden sticky top-0 left-0 w-full">
+            <div class="mob_filter_container w-1/2 bg-white p-5  !border-gray-300 border-solid border-e ">
                 <h2 class="text-center" class="filter_btn option_btn" onclick="filter_option()"><i
                         class="ri-filter-line me-2 text-lg"></i>Filter</h2>
                 <div class="hidden lg:hidden mob_filter fixed left-0 w-screen bg-white z-50 h-screen p-5">
                     <h2 class="text-3xl border-b !border-gray-300 py-1">Filter</h2>
-                    <div class="filter_container mob_filter_content my-3 p-5 rounded-lg overflow-auto">
+                    <div class="filter_container mob_filter_content p-5 rounded-lg overflow-auto">
                         <div class="brand_filter">
-                            <h3 class="flex items-center text-xl mt-3">Brands <span class="filter_value_hide_btn"><i
+                            <h3 class="flex items-center text-xl mt-3">Brands <span
+                                    class="filter_value_hide_btn"><i
                                         class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
                             <ul class="mt-2 filter_content_values">
                                 <li class="ms-5 flex items-center">
@@ -218,7 +226,8 @@
                                 </li>
                                 <li class="ms-5 flex items-center">
                                     <input type="checkbox" class="me-2 cursor-pointer" id="mob_allen-solly">
-                                    <label for="mob_allen-solly" class="cursor-pointer text-lg">Allen-Solly</label>
+                                    <label for="mob_allen-solly"
+                                        class="cursor-pointer text-lg">Allen-Solly</label>
                                 </li>
                                 <li class="ms-5 flex items-center">
                                     <input type="checkbox" class="me-2 cursor-pointer" id="mob_fastrack">
@@ -243,7 +252,8 @@
                             </ul>
                         </div>
                         <div class="price_filter">
-                            <h3 class="flex items-center text-xl mt-3">Price <span class="filter_value_hide_btn"><i
+                            <h3 class="flex items-center text-xl mt-3">Price <span
+                                    class="filter_value_hide_btn"><i
                                         class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
                             <div class="progress_bar_container px-5 filter_content_values">
                                 <div class="price_progress_line mt-3 bg-blue-300 w-full h-1 rounded-lg">
@@ -260,18 +270,23 @@
                             </div>
                         </div>
                         <div class="category">
-                            <h3 class="flex items-center text-xl mt-3">Category <span class="filter_value_hide_btn"><i
+                            <h3 class="flex items-center text-xl mt-3">Category <span
+                                    class="filter_value_hide_btn"><i
                                         class="ri-arrow-drop-down-line text-3xl ms-2"></i></span></h3>
                             <ul class="mt-2 filter_content_values">
-                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Men</li>
-                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Women
+                                <li class="ms-5 flex items-center"><input type="checkbox"
+                                        class="me-2 text-lg">Men</li>
+                                <li class="ms-5 flex items-center"><input type="checkbox"
+                                        class="me-2 text-lg">Women
                                 </li>
-                                <li class="ms-5 flex items-center"><input type="checkbox" class="me-2 text-lg">Kids</li>
+                                <li class="ms-5 flex items-center"><input type="checkbox"
+                                        class="me-2 text-lg">Kids</li>
                             </ul>
                         </div>
                     </div>
-                    <div class="filter_btn flex w-full absolute bottom-16 left-0">
-                        <button class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border"
+                    <div class="filter_btn flex w-full absolute bottom-0 left-0">
+                        <button
+                            class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border"
                             onclick="filter_option()">Cancel</button>
                         <button
                             class="text-lg bg-red-500 text-white w-1/2 p-3  !border-gray-300 border-solid border">Submit</button>
@@ -282,13 +297,21 @@
                 <h2 class="text-center" class="sort_btn option_btn" onclick="sort_option()"><i
                         class="ri-sort-asc me-2 text-lg"></i>Sort By</h2>
                 <div
-                    class="mob_sort hidden lg:hidden fixed left-1/2 -translate-x-1/2 bg-white z-50 p-5 w-1/2 justify-center">
-                    <select name="sort" id="sort_by" class="cursor-pointer">
-                        <option disabled selected>Choose</option>
-                        <option valu e="men">Men</option>
-                        <option value="women">Women</option>
-                        <option value="kids">Kids</option>
-                    </select>
+                    class="mob_sort hidden lg:hidden fixed top-16 left-1/2 -translate-x-1/2 bg-white z-50 p-3 w-full justify-center">
+                    <div class="sort_container relative">
+                        <h4 class="sort_select_btn cursor-pointer rounded-t-md w-56 border-blue-500 border-solid border bg-blue-500 text-white px-5 py-2 flex items-center justify-center"
+                            >Select<i
+                                class="ri-arrow-drop-down-line text-2xl ms-2 select_down_arrow"></i></h4>
+                        <ul
+                            class="hidden_sort absolute top-full overflow-hidden border border-solid border-gray-200 rounded-b-md left-0 bg-white w-full opacity-0 pointer-events-none">
+                            <li class="p-3 border border-solid border-gray-200 cursor-pointer"><i
+                                    class="ri-user-6-line pe-3"></i>Men</li>
+                            <li class="p-3 border border-solid border-gray-200 cursor-pointer"><i
+                                    class="ri-user-2-line pe-3"></i>Women</li>
+                            <li class="p-3 border border-solid border-gray-200 cursor-pointer"><i
+                                    class="ri-user-5-line pe-3"></i>Kids</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -301,9 +324,11 @@
                             class="w-52 h-52 lg:w-80 lg:h-80 object-contain" alt="">
                     </div>
                 </div>
-                <div class="show_side_img_container bg_blur_section fixed top-0 left-0 z-50 w-full h-screen hide_full_img items-center justify-center">
+                <div
+                    class="show_side_img_container bg_blur_section fixed top-0 left-0 z-50 w-full h-screen hide_full_img items-center justify-center">
                     <div class="show_side_img relative bg-white p-5 rounded-md">
-                        <img src="" class="full_side_img w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain" alt="">
+                        <img src="" class="full_side_img w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 object-contain"
+                            alt="">
                         <i class="ri-close-circle-line absolute -top-10 -right-5 sm:-right-10 text-white text-3xl cursor-pointer"
                             onclick="close_full_img()"></i>
                     </div>
@@ -347,7 +372,9 @@
                             class="ri-star-s-fill ms-1"></i>
                     </div>
                     <div class="pro_color flex mt-5">
-                        <h3 class="flex items-center text-lg">Color:<span class="ms-3 border-2 border-gray-400 border-solid bg-gray-200 inline-block w-6 h-6 rounded-full"></span></h3>
+                        <h3 class="flex items-center text-lg">Color:<span
+                                class="ms-3 border-2 border-gray-400 border-solid bg-gray-200 inline-block w-6 h-6 rounded-full"></span>
+                        </h3>
                         <p class="ms-5 in_stock text-lg text-green-500">In Stock</p>
                     </div>
                     <div class="pro_amount mt-5">
@@ -359,7 +386,8 @@
                                 class="fa-solid fa-indian-rupee-sign text-lg"></i> 1,699</span>
                     </div>
                     <p class="pro_desc text-lg text-justify mt-3">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ad, qui repellendus magnam ducimus dicta!
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni ad, qui repellendus magnam
+                        ducimus dicta!
                     </p>
                     <div class="pro_all_side_img hidden w-full lg:flex gap-5 mt-10">
                         <div class="pro_side_img">
@@ -457,7 +485,8 @@
                             <div
                                 class="show_review_img_container bg_blur_section fixed top-0 left-0 z-50 w-full h-screen review_hide_full_img items-center justify-center">
                                 <div class="show_side_img show_review_img relative bg-white p-5 rounded-md">
-                                    <img src="" class="full_review_img w-64 h-64 sm:w-80 sm:h-80  md:w-96 md:h-96 rounded-md object-contain"
+                                    <img src=""
+                                        class="full_review_img w-64 h-64 sm:w-80 sm:h-80  md:w-96 md:h-96 rounded-md object-contain"
                                         alt="">
                                     <i class="ri-close-circle-line absolute -top-10 -right-5 sm:-right-10 text-white text-3xl cursor-pointer"
                                         onclick="close_review_full_img()"></i>
@@ -499,10 +528,16 @@
                                         alt="">
                                 </div>
                             </div>
-                            <button class="animate-btn-color bg-blue-500 p-5 border border-solid border-blue-500 text-white" onclick="add_review_btn()">Add Your Review</button>
-                            <div class="add_review_container close_add_review fixed top-0 left-0 z-50 w-full h-screen flex-col justify-center items-center bg_blur_section">
-                                <div class="add_review bg-white p-5 w-72 sm:w-96 md:w-1/2 flex flex-col justify-center items-start sm:p-10 rounded-md">
-                                    <textarea name="" id="" class="rounded-md w-full h-52 outline-none border border-gray-300 border-solid" placeholder="Enter Your Review"></textarea>
+                            <button
+                                class="animate-btn-color bg-blue-500 p-5 border border-solid border-blue-500 text-white"
+                                onclick="add_review_btn()">Add Your Review</button>
+                            <div
+                                class="add_review_container close_add_review fixed top-0 left-0 z-50 w-full h-screen flex-col justify-center items-center bg_blur_section">
+                                <div
+                                    class="add_review bg-white p-5 w-72 sm:w-96 md:w-1/2 flex flex-col justify-center items-start sm:p-10 rounded-md">
+                                    <textarea name="" id=""
+                                        class="rounded-md w-full h-52 outline-none border border-gray-300 border-solid"
+                                        placeholder="Enter Your Review"></textarea>
                                     <input type="file" class="mt-5 rounded-sm">
                                     <div class="review_ratings flex gap-3 mt-5 text-xl">
                                         <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
@@ -512,8 +547,11 @@
                                         <i class="ri-star-s-fill text-yellow-300 cursor-pointer"></i>
                                     </div>
                                     <div class="review_save_cancel mt-5 flex gap-3">
-                                        <input type="submit" value="Save" class="cursor-pointer bg-blue-500 border border-solid border-blue-500 p-2 sm:p-3 w-20 sm:w-24 rounded-sm text-white" >
-                                        <button class="close_review_btn cursor-pointer bg-white border border-solid border-blue-500 p-2 sm:p-3 w-20 sm:w-24 rounded-sm text-blue-500" onclick="close_add_review()">Cancel</button>
+                                        <input type="submit" value="Save"
+                                            class="cursor-pointer bg-blue-500 border border-solid border-blue-500 p-2 sm:p-3 w-20 sm:w-24 rounded-sm text-white">
+                                        <button
+                                            class="close_review_btn cursor-pointer bg-white border border-solid border-blue-500 p-2 sm:p-3 w-20 sm:w-24 rounded-sm text-blue-500"
+                                            onclick="close_add_review()">Cancel</button>
                                     </div>
                                 </div>
                             </div>
