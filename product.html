@@ -78,7 +78,7 @@
 
                     <i class="open_menu ri-menu-fold-2-line text-2xl" id="open_menu_btn"></i>
                 </div>
-                <div class="menu_slider fixed md:hidden top-0 z-50 w-2/3 h-screen">
+                <div class="menu_slider fixed md:hidden top-0 z-50 w-2/3">
                     <div class="menu_slider_header p-3 bg-white">
                         <div class="menu_logo flex justify-between">
                             <div class="logo">
@@ -87,15 +87,18 @@
                                 </a>
                             </div>
                             <!-- <i class="close_menu ri-menu-unfold-2-line " id="close_menu_btn"></i> -->
-                            <span class="flex flex-col items-center gap-1"><i class="ri-logout-circle-line text-xl"></i>Log Out</span>
+                            <span class="flex flex-col items-center gap-1"><i
+                                    class="ri-logout-circle-line text-xl"></i>Log Out</span>
                         </div>
                         <div class="mob_user_name text-xl mt-5 mx-3">
-                            <span class="flex items-center text-gray-700"><i class="fa-solid fa-user me-3 rounded-full border border-gray-700 border-solid w-10 h-10 !grid place-items-center"></i>Arbaz Karimi</span>
+                            <span class="flex items-center text-gray-700"><i
+                                    class="fa-solid fa-user me-3 rounded-full border border-gray-700 border-solid w-10 h-10 !grid place-items-center"></i>Arbaz
+                                Karimi</span>
                         </div>
                     </div>
-                    <div class="mob_nav_container rounded-lg mx-3">
+                    <div class="mob_nav_container rounded-lg">
                         <nav class="mob_nav">
-                            <ul class="flex flex-col gap-5 p-5">
+                            <ul class="flex flex-col gap-2 ps-5 py-5">
                                 <li class="text-white text-xl"><a href="index.html"><i
                                             class="ri-home-8-line pe-3"></i>Home</a>
                                 </li>
@@ -106,9 +109,29 @@
                                             class="ri-contacts-book-3-line pe-3"></i>Contact</a></li>
                                 <li class="text-white text-xl cursor-pointer"><a href="login.html"><i
                                             class="ri-login-circle-line pe-3"></i>Log in</a></li>
+                                <li class="text-white text-xl"><a href="#"><i class="ri-user-6-line pe-3"></i>Men</a>
+                                </li>
+                                <li class="text-white text-xl"><a href="#"><i class="ri-user-2-line pe-3"></i>Women</a>
+                                </li>
+                                <li class="text-white text-xl"><a href="#"><i class="ri-user-5-line pe-3"></i>Kids</a>
+                                </li>
+                                <li class="text-white text-xl"><a href="service.html"><i
+                                            class="ri-shake-hands-line pe-3"></i>Services</a></li>
+                                <li class="text-white text-xl"><a href="blog.html"><i
+                                            class="ri-news-line pe-3"></i>Blogs</a>
+                                </li>
+                                <li class="text-white text-xl cursor-pointer"><a href="cart.html"><i
+                                            class="ri-shopping-cart-2-line pe-3"></i>Cart</a>
+                                </li>
+                                <li class="text-white text-xl cursor-pointer" onclick="filter_option()">
+                                    <i class="ri-filter-line me-2 text-lg"></i>Filter
+                                </li>
+                                <li class="text-white text-xl cursor-pointer" onclick="sort_option()">
+                                    <i class="ri-sort-asc me-2 text-lg"></i>Sort
+                                </li>
                             </ul>
                         </nav>
-                        <nav class="mob_all_nav_show">
+                        <!-- <nav class="mob_all_nav_show">
                             <ul class="flex flex-col pb-5 px-5 gap-5">
                                 <li class="text-white text-xl"><a href="#"><i class="ri-user-6-line pe-3"></i>Men</a>
                                 </li>
@@ -131,7 +154,7 @@
                                     <i class="ri-sort-asc me-2 text-lg"></i>Sort
                                 </li>
                             </ul>
-                        </nav>
+                        </nav> -->
                     </div>
                     <div class="show_all_menu flex justify-end items-center px-5">
                         <i class="ri-arrow-drop-down-line text-4xl text-white show_all_menu_icon"></i>
