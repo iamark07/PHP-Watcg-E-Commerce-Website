@@ -16,21 +16,19 @@ mob_search_btn.addEventListener("click", ()=>{
 
 // menu slider function
 
-// open menu funtion
+// open menu side bar funtion
 
 let open_menu_btn = document.getElementById("open_menu_btn");
 
 open_menu_btn.addEventListener("click" , ()=> {
     document.querySelector(".menu_slider").classList.toggle("open_menu_active");
-})
+});
 
-// close menu function
+// close menu side bar
 
-// let close_menu_btn = document.getElementById("close_menu_btn");
-
-// close_menu_btn.addEventListener("click" , ()=> {
-//     document.querySelector(".menu_slider").classList.remove("open_menu_active");
-// })
+function close_menu_bar() {
+    document.querySelector(".menu_slider").classList.toggle("open_menu_active");
+};
 
 // show all filter content
 
@@ -54,6 +52,14 @@ function filter_option(){
     }
 
 }
+
+// filter arrow rotate
+
+document.querySelectorAll(".filter_arrow").forEach(fil_arrow =>{
+    fil_arrow.addEventListener("click", ()=>{
+        fil_arrow.classList.toggle("fil_arrow_rotate");
+    });
+});
 
 // sort option 
 

@@ -38,11 +38,14 @@
 .menu_slider {
     left: -100%;
     transition: all .3s;
+  }
+  
+  .menu_side_baar_container{
     backdrop-filter: blur(15px);
     background-color: rgba(0, 00, 0, 0.5);
-    height: 100dvh;
     box-shadow: 0px 0px 10px 0px rgb(48, 48, 48);
-}
+    height: 100dvh; 
+  }
 
 .open_menu_active {
     left: 0% !important;
@@ -132,9 +135,14 @@
 
 /* mobile filter option */
 
+.mob_filter_sort_container{
+    display: none !important;
+}
+
 .fixed_position {
     position: fixed !important;
     z-index: 999;
+    display: flex !important;
     /* border-bottom: 1px solid rgb(156, 163, 175) !important; */
 }
 
@@ -169,6 +177,15 @@
     pointer-events: none;
     /* padding: 0px !important; */
 }
+
+.filter_arrow{
+    transform: rotate(180deg);
+    transition: all .5s;
+  }
+  
+  .fil_arrow_rotate{
+    transform: rotate(0deg);
+  }
 
 .progress_pointer {
     left: 100%;
