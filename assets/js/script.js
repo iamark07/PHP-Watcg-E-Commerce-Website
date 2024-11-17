@@ -14,6 +14,25 @@ mob_search_btn.addEventListener("click", ()=>{
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    // user setting show hide
+    
+        document.querySelector(".mob_user_setting_btn").addEventListener("click", function() {
+            console.log("hello");
+            document.querySelector(".mob_user_setting").classList.toggle("!block");
+    
+        });
+    
+        document.querySelector(".user_setting_btn").addEventListener("click", function() {
+            console.log("hello"); 
+            document.querySelector(".user_setting").classList.toggle("!opacity-100");
+            document.querySelector(".user_setting").classList.toggle("!pointer-events-auto");
+        });
+    
+    });
+
+
+
 // menu slider function
 
 // open menu side bar funtion
@@ -36,7 +55,8 @@ document.querySelectorAll(".filter_value_hide_btn").forEach(value => {
     value.addEventListener("click", ()=>{
         let items_parent = value.parentElement;
         let select_element = items_parent.nextElementSibling;
-        select_element.classList.toggle("hide_filter_values");
+        let select_children = select_element.firstElementChild;
+        select_children.classList.toggle("hide_filter_values");
     });
 });
 

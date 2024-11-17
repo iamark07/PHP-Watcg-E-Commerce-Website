@@ -14,6 +14,45 @@
 //     });
 // });
 
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    // user setting show hide
+    
+        document.querySelector(".mob_user_setting_btn").addEventListener("click", function() {
+            console.log("hello");
+            document.querySelector(".mob_user_setting").classList.toggle("!block");
+    
+        });
+    
+        document.querySelector(".user_setting_btn").addEventListener("click", function() {
+            console.log("hello"); 
+            document.querySelector(".user_setting").classList.toggle("!opacity-100");
+            document.querySelector(".user_setting").classList.toggle("!pointer-events-auto");
+        });
+    
+    });
+
+
+
+
+    
+// menu slider function
+
+// open menu side bar funtion
+
+let open_menu_btn = document.getElementById("open_menu_btn");
+
+open_menu_btn.addEventListener("click" , ()=> {
+    document.querySelector(".menu_slider").classList.toggle("open_menu_active");
+});
+
+// close menu side bar
+
+function close_menu_bar() {
+    document.querySelector(".menu_slider").classList.toggle("open_menu_active");
+};
+
 // Select all elements with the class "pro_side_img"
 let pro_side_img = document.querySelectorAll(".pro_side_img");
 

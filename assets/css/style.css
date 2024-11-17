@@ -1,3 +1,10 @@
+/* tailwind css */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* google font link */
 
 @import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Teko:wght@300..700&display=swap');
@@ -23,7 +30,7 @@
 }
 
 .search_box_active {
-  top: 100.67px !important;
+  top: 121.33px !important;
   z-index: 30 !important;
 }
 
@@ -32,7 +39,7 @@
 }
 
 .mob_search_box_active {
-  top: 56px !important;
+  top: 63.11px !important;
   z-index: 30 !important;
 }
 
@@ -60,7 +67,7 @@
   overflow: hidden;
 }
 
-.mob_nav ul{
+.mob_nav ul:first-child{
   max-height: calc(100dvh - 208px) !important;
   overflow: auto;
   transition: all .5s;
@@ -116,7 +123,8 @@
 }
 
 .aside_content {
-  height: calc(100vh - 40px);
+ min-height: calc(100dvh - 40px);
+ max-height: fit-content;
 }
 
 .mob_filter_sort_container {
@@ -195,7 +203,7 @@
 }
 
 .filter_content_values{
-  transition: all .5s linear;
+  /* transition: all .3s linear; */
   max-height: 500px;
   /* box-shadow: rgb(205, 205, 205) 0px 0px 15px 5px inset; */
 }
