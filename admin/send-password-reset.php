@@ -1,75 +1,46 @@
 <?php
+include "config.php"; // Database connection file
+require "mailer.php"; // Include the mailer configuration
 
-$email = $_POST["email"];
+session_start();
+$message = "";
 
-// Generate a new token
-$token = bin2hex(random_bytes(16));
-$token_hash = hash("sha256", $token);
-$expiry = date("Y-m-d H:i:s", time() + 60 * 30);
+if (isset($_POST['submit'])) {
+    $user_email = mysqli_real_escape_string($conn, $_POST['email']);
 
-$mysqli = require __DIR__ . "/config.php";
+    // Check if the email exists in the database
+    $result = mysqli_query($conn, "SELECT * FROM user WHERE email = '{$user_email}'");
+    if (mysqli_num_rows($result) > 0) {
+        // Generate a random reset token
+        $token = bin2hex(random_bytes(50));
+        $expiry_time = date('Y-m-d H:i:s', strtotime('+1 hour'));
 
-if (!$mysqli || $mysqli->connect_errno) {
-    die("Failed to connect to MySQL: " . $mysqli->connect_error);
-}
+        // Update user with reset token and expiry time
+        $sql = "UPDATE user 
+                SET reset_token_hash = '{$token}', reset_token_expires_at = '{$expiry_time}' 
+                WHERE email = '{$user_email}'";
 
-// Check if the token hash already exists in the database
-$sql_check = "SELECT * FROM user WHERE reset_token_hash = ?";
-$stmt_check = $mysqli->prepare($sql_check);
-$stmt_check->bind_param("s", $token_hash);
-$stmt_check->execute();
-$result_check = $stmt_check->get_result();
+        if (mysqli_query($conn, $sql)) {
+            // Send email to user with reset link
+            $reset_link = "http://yourwebsite.com/reset_password.php?token=" . $token;
+            $subject = "Password Reset Request";
+            $message_body = "Click the link to reset your password: <a href='" . $reset_link . "'>Reset Password</a>";
 
-if ($result_check->num_rows > 0) {
-    // If token hash already exists, generate a new one
-    $token = bin2hex(random_bytes(16));
-    $token_hash = hash("sha256", $token);
-}
-
-$stmt_check->close();
-
-// Update the reset token and expiry
-$sql = "UPDATE user
-        SET reset_token_hash = ?,
-            reset_token_expires_at = ?
-        WHERE email = ?";
-
-$stmt = $mysqli->prepare($sql);
-
-if (!$stmt) {
-    die("Statement preparation failed: " . $mysqli->error);
-}
-
-$stmt->bind_param("sss", $token_hash, $expiry, $email);
-$stmt->execute();
-
-// echo "Password reset token updated successfully.";
-
-
-if ($mysqli->affected_rows) {
-
-    $mail = require __DIR__ . "/mailer.php";
-
-    $mail->setFrom("noreply@example.com");
-    $mail->addAddress($email);
-    $mail->Subject = "Password Reset";
-    $mail->Body = <<<END
-
-    Click <a href="http://example.com/reset-password.php?token=$token">here</a> 
-    to reset your password.
-
-    END;
-
-    try {
-
-        $mail->send();
-
-    } catch (Exception $e) {
-
-        echo "Message could not be sent. Mailer error: {$mail->ErrorInfo}";
-
+            // Send the email
+            if (sendResetEmail($user_email, $subject, $message_body)) {
+                $message = "Password reset email sent!";
+            } else {
+                $message = "Failed to send email.";
+            }
+        } else {
+            $message = "Error: " . mysqli_error($conn);
+        }
+    } else {
+        $message = "Email not found!";
     }
-
 }
 
-echo "Message sent, please check your inbox.";
+if ($message) {
+    echo "<div class='message'>$message</div>";
+}
+?>

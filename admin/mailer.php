@@ -1,24 +1,34 @@
 <?php
-
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;    
 use PHPMailer\PHPMailer\Exception;
+
 require __DIR__ . "/vendor/autoload.php";
 
+function sendResetEmail($email, $subject, $body) {
+    $mail = new PHPMailer(true);
 
-$mail = new PHPMailer(true);
+    try {
+        $mail->isSMTP();
+        $mail->Host = "smtp.gmail.com";
+        $mail->SMTPAuth = true;
+        $mail->Username = "your-email@gmail.com"; // Your Gmail
+        $mail->Password = "your-app-password"; // App password from Gmail
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+        $mail->Port = 587;
 
-// $mail->SMTPDebug = SMTP::DEBUG_SERVER;
+        $mail->setFrom("your-email@gmail.com", "Your Website");
+        $mail->addAddress($email);
+        $mail->isHTML(true);
+        $mail->Subject = $subject;
+        $mail->Body = $body;
 
-$mail->isSMTP();
-$mail->SMTPAuth = true;
+        $mail->send();
+        return true;
 
-$mail->Host = "smtp.gmail.com";
-$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-$mail->Port = 587;
-$mail->Username = "your-user@example.com";
-$mail->Password = "your-password";
-
-$mail->isHtml(true);
-
-return $mail;
+    } catch (Exception $e) {
+        error_log("Mailer Error: " . $mail->ErrorInfo);
+        return false;
+    }
+}
+?>

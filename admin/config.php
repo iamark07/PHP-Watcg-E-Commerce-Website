@@ -1,16 +1,4 @@
 <?php
 $hostname = "http://localhost/watch-e-commerce";
-$host = "localhost";
-$dbname = "watch-e-commerce";
-$username = "root";
-$password = "";
-
-$mysqli = new mysqli($host, $username, $password, $dbname);
-
-if ($mysqli->connect_errno) {
-    die("Connection error: " . $mysqli->connect_error);
-}
-
-return $mysqli;
-
+$conn = mysqli_connect("localhost", "root", "", "watch-e-commerce") or die("connection failed : " . mysqli_connect_error());
 ?>
