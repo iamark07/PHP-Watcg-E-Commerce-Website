@@ -2,38 +2,38 @@
 include "config.php"; // Include your database configuration file
 session_start();
 
-$message = "";
+// $message = "";
 
-if (isset($_POST['submit'])) {
-    $user_email = mysqli_real_escape_string($conn, $_POST['email']);
+// if (isset($_POST['submit'])) {
+//     $user_email = mysqli_real_escape_string($conn, $_POST['email']);
     
-    // Generate a random reset token
-    $token = bin2hex(random_bytes(50));
+//     // Generate a random reset token
+//     $token = bin2hex(random_bytes(50));
     
-    // Set the expiry time (1 hour from now)
-    $expiry_time = date('Y-m-d H:i:s', strtotime('+1 hour'));
+//     // Set the expiry time (1 hour from now)
+//     $expiry_time = date('Y-m-d H:i:s', strtotime('+1 hour'));
     
-    // Update the user record with reset token and expiry time
-    $sql = "UPDATE user 
-            SET reset_token = '{$token}', reset_expiry = '{$expiry_time}' 
-            WHERE email = '{$user_email}'";
+//     // Update the user record with reset token and expiry time
+//     $sql = "UPDATE user 
+//             SET reset_token = '{$token}', reset_expiry = '{$expiry_time}' 
+//             WHERE email = '{$user_email}'";
     
-    if (mysqli_query($conn, $sql)) {
-        // Send email to user with reset link
-        $reset_link = "http://yourwebsite.com/reset_password.php?token=" . $token;
-        $subject = "Password Reset Request";
-        $message = "Click on this link to reset your password: " . $reset_link;
-        $headers = "From: no-reply@yourwebsite.com";
+//     if (mysqli_query($conn, $sql)) {
+//         // Send email to user with reset link
+//         $reset_link = "http://yourwebsite.com/reset_password.php?token=" . $token;
+//         $subject = "Password Reset Request";
+//         $message = "Click on this link to reset your password: " . $reset_link;
+//         $headers = "From: no-reply@yourwebsite.com";
         
-        if (mail($user_email, $subject, $message, $headers)) {
-            $message = "Password reset email sent!";
-        } else {
-            $message = "Failed to send email.";
-        }
-    } else {
-        $message = "Error: " . mysqli_error($conn);
-    }
-}
+//         if (mail($user_email, $subject, $message, $headers)) {
+//             $message = "Password reset email sent!";
+//         } else {
+//             $message = "Failed to send email.";
+//         }
+//     } else {
+//         $message = "Error: " . mysqli_error($conn);
+//     }
+// }
 ?>
 
 <!DOCTYPE html>
@@ -62,11 +62,11 @@ if (isset($_POST['submit'])) {
                 <input type="submit" name="submit" value="Send Reset Link" class="cursor-pointer bg-blue-400 text-white w-72 md:!w-80 xl:!w-96 rounded-sm p-3">
             </div>
         </form>
-        <?php
+        <!-- <?php
         if ($message) {
             echo "<div class='message'>$message</div>";
         }
-        ?>
+        ?> -->
     </div>
 </body>
 </html>

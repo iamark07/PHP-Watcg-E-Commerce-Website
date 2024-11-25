@@ -12,12 +12,12 @@ function sendResetEmail($email, $subject, $body) {
         $mail->isSMTP();
         $mail->Host = "smtp.gmail.com";
         $mail->SMTPAuth = true;
-        $mail->Username = "your-email@gmail.com"; // Your Gmail
-        $mail->Password = "your-app-password"; // App password from Gmail
+        $mail->Username = "arbazkarimi@gmail.com"; // Your Gmail
+        $mail->Password = "vchgklbrhjvswktw"; // App password from Gmail
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
         $mail->Port = 587;
 
-        $mail->setFrom("your-email@gmail.com", "Your Website");
+        $mail->setFrom("arbazkarimi@gmail.com", "Tick Tock E-Commerce Website");
         $mail->addAddress($email);
         $mail->isHTML(true);
         $mail->Subject = $subject;

@@ -843,7 +843,7 @@ session_start();
                 <?php
                 include "admin/config.php";
 
-                $limit = 3;
+                $limit = 12;
                 $page = isset($_GET['page']) ? $_GET['page'] : 1;
                 $offset = ($page - 1) * $limit;
 

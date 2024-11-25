@@ -31,7 +31,9 @@
             <div class="user_add_wrapper w-full p-5 md:py-7 md:px-10 flex gap-10 flex-col md:justify-center lg:flex-row">
                 <div class="add_form flex gap-3 w-full flex-col p-5 cart_shadow bg-white rounded-lg">
                     <div class="use_current_loc mb-3">
-                        <span class="cursor-pointer text-md"><i class="ri-map-pin-line me-2 text-blue-500"></i> Use current Location</span>
+                        <span id="useCurrentLocation" class="cursor-pointer text-md">
+                            <i class="ri-map-pin-line me-2 text-blue-500"></i> Use current Location
+                        </span>
                     </div>
                     <form action="" class="grid gap-3 grid-cols-1 lg:grid-cols-2">
                         <div class="input_boxes flex flex-col">
@@ -99,7 +101,7 @@
                         <div class="submit_btn mt-5 flex gap-3">
                             <input type="submit"
                                 class="cursor-pointer animate-btn-color bg-blue-500 border border-solid border-blue-500 text-white py-3 px-8 rounded-sm">
-                            <a href="cart.php" 
+                            <a href="cart.php"
                                 class="cursor-pointer bg-white border border-solid border-blue-500 text-blue-500 py-3 px-8">Cancel
                             </a>
                         </div>
@@ -147,4 +149,64 @@
             </div>
         </div>
     </main>
+    <script>
+        document.getElementById("useCurrentLocation").addEventListener("click", () => {
+            // Check if Geolocation is supported
+            if (navigator.geolocation) {
+                // Get the user's location
+                navigator.geolocation.getCurrentPosition(
+                    async (position) => {
+                            const {
+                                latitude,
+                                longitude
+                            } = position.coords;
+                            console.log(`Latitude: ${latitude}, Longitude: ${longitude}`);
+
+                            // Replace 'YOUR_API_KEY' with your Google Maps API key
+                            const apiKey = "AIzaSyBgAyzVLVVUYJxNHn_4qYIr5LDDYjiT-5Y";
+                            const geocodeURL = `https://maps.googleapis.com/maps/api/geocode/json?latlng=${latitude},${longitude}&key=${apiKey}`;
+
+                            try {
+                                // Fetch the address from the Geocoding API
+                                const response = await fetch(geocodeURL);
+                                const data = await response.json();
+                                console.log(data);
+
+                                if (data.status === "OK" && data.results.length > 0) {
+                                    const address = data.results[0].formatted_address;
+
+                                    // Extract city and state
+                                    const city = data.results[0].address_components.find((comp) =>
+                                        comp.types.includes("locality")
+                                    )?.long_name || "";
+                                    const state = data.results[0].address_components.find((comp) =>
+                                        comp.types.includes("administrative_area_level_1")
+                                    )?.short_name || "";
+
+                                    // Fill form fields
+                                    document.querySelector("input[placeholder='City/District/Town']").value = city;
+                                    document.querySelector("select").value = state;
+                                    document.querySelector("input[placeholder='Address (Area and Street)']").value = address;
+
+                                    alert("Location fetched successfully!");
+                                } else {
+                                    alert("Unable to fetch address. Try again.");
+                                }
+                            } catch (error) {
+                                console.error("Error fetching address:", error);
+                                alert("Error occurred while fetching the location.");
+                            }
+                        },
+                        (error) => {
+                            console.error("Geolocation error:", error);
+                            alert("Failed to retrieve location. Enable location access.");
+                        }
+                );
+            } else {
+                alert("Geolocation is not supported by your browser.");
+            }
+        });
+    </script>
 </body>
+
+</html>

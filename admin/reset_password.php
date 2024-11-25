@@ -3,51 +3,67 @@ include "config.php";
 session_start();
 
 $message = "";
+$log = "";
 
 // Check if token is in the URL
 if (isset($_GET['token'])) {
     $token = mysqli_real_escape_string($conn, $_GET['token']);
-    
+
     // Retrieve the record with the given token
-    $result = mysqli_query($conn, "SELECT * FROM user WHERE reset_token_hash = '{$token}' AND reset_token_expires_at > NOW()");
+    $result = mysqli_query($conn, "SELECT * FROM user WHERE reset_token_hash = '{$token}'");
+
     if (mysqli_num_rows($result) > 0) {
-        if (isset($_POST['submit'])) {
-            $new_password = mysqli_real_escape_string($conn, $_POST['password']);
-            $confirm_password = mysqli_real_escape_string($conn, $_POST['confirm_password']);
-            
-            // Check if passwords match
-            if ($new_password === $confirm_password) {
-                // Hash the password and update in the database
-                $hashed_password = password_hash($new_password, PASSWORD_BCRYPT);
-                
-                $sql = "UPDATE user SET password = '{$hashed_password}', reset_token_hash = NULL, reset_token_expires_at = NULL WHERE reset_token_hash = '{$token}'";
-                
-                if (mysqli_query($conn, $sql)) {
-                    $message = "Password reset successful!";
+        // Fetch the user's data
+        $row = mysqli_fetch_assoc($result);
+        $expiry_time = $row['reset_token_expires_at'];
+
+        // Check if the token has expired (1 hour validity)
+        if (strtotime($expiry_time) > time()) {
+            // Token is still valid, proceed with password reset
+            if (isset($_POST['submit'])) {
+                $new_password = mysqli_real_escape_string($conn, $_POST['password']);
+                $confirm_password = mysqli_real_escape_string($conn, $_POST['confirm_password']);
+
+                // Check if passwords match
+                if ($new_password === $confirm_password) {
+                    // Hash the password and update in the database
+                    $hashed_password = md5($new_password);
+
+                    $sql = "UPDATE user SET password = '{$hashed_password}', reset_token_hash = NULL, reset_token_expires_at = NULL WHERE reset_token_hash = '{$token}'";
+
+                    if (mysqli_query($conn, $sql)) {
+                        $message = "Password reset successful!";
+                        $log = '<p class="mt-5">Now You Can <a href="' . $hostname . '/admin/" class="px-3 py-2 bg-blue-500 text-white">Login</a></p>';
+                    } else {
+                        $message = "Error: " . mysqli_error($conn);
+                    }
                 } else {
-                    $message = "Error: " . mysqli_error($conn);
+                    $message = "Passwords do not match!";
                 }
-            } else {
-                $message = "Passwords do not match!";
             }
+        } else {
+            // Token has expired
+            $message = "Your reset token has expired!";
         }
     } else {
-        $message = "Invalid or expired token!";
+        $message = "Invalid token!";
     }
 } else {
-    header("Location: send-password-reset.php"); // Redirect if token is missing
+    header("Location: $hostname/admin/"); // Redirect if token is missing
     exit();
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Reset Password</title>
 </head>
+
 <body>
     <div class="container w-full flex flex-col items-center justify-center bg-gray-200 p-5 md:p-20 h-screen">
         <h2 class="text-blue-500 text-3xl mb-5">Set New Password</h2>
@@ -65,6 +81,7 @@ if (isset($_GET['token'])) {
         <?php
         if ($message) {
             echo "<div class='message'>$message</div>";
+            echo $log;
         }
         ?>
     </div>
